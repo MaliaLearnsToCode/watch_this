@@ -1,6 +1,11 @@
 class WatchesController < ApplicationController
-  skip_before_action :authenticate_user!, only: %i[show]
+  skip_before_action :authenticate_user!, only: %i[home show]
   before_action :set_watch, only: %i[show edit update destroy]
+
+  def index
+    @watches = Watch.all
+    @watches = policy_scope(Watch)
+  end
 
   def show
     authorize @watch
@@ -12,7 +17,6 @@ class WatchesController < ApplicationController
   def set_watch
     @watch = Watch.find(params[:id])
   end
-
 end
 
 
