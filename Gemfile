@@ -11,6 +11,8 @@ gem "sprockets-rails"
 
 gem "devise"
 
+gem "simple_form", github: "heartcombo/simple_form"
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
