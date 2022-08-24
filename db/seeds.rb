@@ -10,22 +10,52 @@ require "nokogiri"
 
 puts "Cleaning database"
 Watch.destroy_all
+Booking.destroy_all
 User.destroy_all
+Review.destroy_all
 
+puts 'Creating Users ...'
 user1 = User.create!(email: 'felita@lewagon.com', password: '12345678', first_name: 'Felita', last_name: 'Liem')
 user2 = User.create!(email: 'malia@lewagon.com', password: '12345678', first_name: 'Malia', last_name: 'Newgen')
 user3 = User.create!(email: 'danish@lewagon.com', password: '12345678', first_name: 'Danish', last_name: 'Hisham')
 user4 = User.create!(email: 'julian@lewagon.com', password: '12345678', first_name: 'Julian', last_name: 'Wong')
-user5 = User.create!(email: 'susan@lewagon.com', password: '12345678', first_name: 'Susan Sen', last_name: 'Yeo')
+user5 = User.create!(email: 'alfred@lewagon.com', password: '12345678', first_name: 'Alfred', last_name: 'Tay')
+user6 = User.create!(email: 'ashley@lewagon.com', password: '12345678', first_name: 'Ashley Ignatius', last_name: 'Yeo')
+user7 = User.create!(email: 'grace@lewagon.com', password: '12345678', first_name: 'Grace', last_name: 'Wong')
+user8 = User.create!(email: 'sarina@lewagon.com', password: '12345678', first_name: 'Sarina', last_name: 'Yeo')
+user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name: 'Hugo', last_name: 'Low')
+user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low')
 
-Watch.create!(brand: 'Patek Philippe', model: 'Nautilus', year: 2022, price: 799.99, user: user1)
-Watch.create!(brand: 'Lange & Söhne', model: 'Lange 1', year: 1986, price: 499.00, user: user2)
-Watch.create!(brand: 'Audemars Piguet', model: 'Code 1165', year: 2019, price: 290.00, user: user3)
-Watch.create!(brand: 'Rolex', model: 'Daytona', year: 1972, price: 1999.99, user: user1)
-Watch.create!(brand: 'Audemars Piguet', model: 'Royal Oak Openwork', year: 2009, price: 850.99, user: user4)
-Watch.create!(brand: 'Patek Philippe', model: 'Aquanaut', year: 2003, price: 799.99, user: user1)
-Watch.create!(brand: 'Richard Mille', model: 'RM1', year: 2000, price: 1200.00, user: user1)
-Watch.create!(brand: 'Cartier', model: 'Crash', year: 1967, price: 1599.00, user: user5)
+puts 'Creating Watches ...'
+watch1 = Watch.create!(brand: 'Patek Philippe', model: 'Nautilus', year: 2022, price: 799.99, user: user1)
+watch2 = Watch.create!(brand: 'Lange & Söhne', model: 'Lange 1', year: 1986, price: 499.00, user: user2)
+watch3 = Watch.create!(brand: 'Audemars Piguet', model: 'Code 1165', year: 2019, price: 290.00, user: user3)
+watch4 = Watch.create!(brand: 'Rolex', model: 'Daytona', year: 1972, price: 1999.99, user: user1)
+watch5 = Watch.create!(brand: 'Audemars Piguet', model: 'Royal Oak Openwork', year: 2009, price: 850.99, user: user4)
+watch6 = Watch.create!(brand: 'Patek Philippe', model: 'Aquanaut', year: 2003, price: 799.99, user: user1)
+watch7 = Watch.create!(brand: 'Richard Mille', model: 'RM1', year: 2000, price: 1200.00, user: user1)
+watch8 = Watch.create!(brand: 'Cartier', model: 'Crash', year: 1967, price: 1599.00, user: user5)
+
+puts 'Creating Bookings ...'
+booking1 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1500, watch: watch1, renter: user5, status: 'pending')
+booking2 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 26), total: 5000, watch: watch2, renter: user6, status: 'confirmed')
+booking3 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 27), total: 2311, watch: watch3, renter: user5, status: 'canceled')
+booking4 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1800, watch: watch4, renter: user7, status: 'pending')
+booking5 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1000, watch: watch5, renter: user8, status: 'pending')
+booking6 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed')
+booking7 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch7, renter: user9, status: 'canceled')
+booking8 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch8, renter: user1, status: 'canceled')
+
+puts 'Creating Reviews ...'
+review1 = Review.create(rating: 5, comment: 'Nice nice!', booking: booking1)
+review1 = Review.create(rating: 4, comment: 'very nice watch! Nice owner too!', booking: booking3)
+review1 = Review.create(rating: 4, comment: 'Handsome watch. Did my wrist roll 100 times!', booking: booking2)
+review1 = Review.create(rating: 2, comment: 'Worst experience ever!', booking: booking4)
+review1 = Review.create(rating: 1, comment: 'Awful awful!', booking: booking6)
+
+
+
+
 
 # ingredient = "chocolate"
 # url = "https://www.bbcgoodfood.com/search/recipes?q=#{ingredient}"
@@ -64,4 +94,103 @@ Watch.create!(brand: 'Cartier', model: 'Crash', year: 1967, price: 1599.00, user
 #   movie: Movie.first
 # )
 
-puts "Finished!"
+# puts "Finished!"
+
+
+
+# WATCHES CONTROLLER
+# rails g model watch brand model year ... user:references
+# rails g controller watches index new show create edit update delete
+
+# class Watch < ApplicationRecord
+#   belongs_to :user
+# end
+
+# class User < ApplicationRecord
+#   has_many :watches
+# end
+
+# class RestaurantaController < ApplictionsController
+#   before_action :set_watch, only %i[show edit update destroy
+
+    # def index
+    #   @restaurants = policy_scope(Restaurant) # restaurants are under the policy scope of the model restaurant
+    # end
+
+    # def new
+    #   @watch = Watch.new
+    #   authorize @watch
+    # end
+
+#   def create
+#     @watch = Watch.new(watch_params)
+#     @watch.user = current_user # when in view: we can do this "<%= @watch.user.name %>""
+#     authorize @restaurant
+#     respond_to do |format| ...etc.
+#   end
+
+    # def show
+    #   authorize @watch
+    # end
+
+    # def edit
+    #   authorize @watch
+    # end
+
+    # def update
+    #   authorize @watch
+    # end
+
+    # def destroy
+    #   authorize @watch # because needs authorization first (of user) before can deleted
+    # end
+
+#   private
+#   def set_watch
+#     @watch = Watch.find(params[:id])
+#   end
+
+#   def watch_params
+#     params.require(:watch).permit(:somethingfromwatch)
+#   end
+# end
+
+# class ApplicationController < ApplictionsController
+    # private
+    # def skip_pundit?
+    #   devise_controller? //...
+    # end
+
+# class WatchPolicy
+#   class Scope < Scope
+#   def resolve
+#     user.admin? ? scope.all : scope.where(user: user)
+#   end
+
+#   def show?
+#     true
+#   end
+
+#   def create?
+#     true
+#   end
+
+#   def update?
+#     (record.user == user) || user.admin
+#   end
+
+#   def destroy
+#     record.user == user
+#   end
+# end
+
+# class ApplicationPolicy
+#   attr_reader :user, :record # record is the watch itself
+#   def initialize
+#     true
+#   end
+
+#   def create?
+#     true
+#   end
+# end
