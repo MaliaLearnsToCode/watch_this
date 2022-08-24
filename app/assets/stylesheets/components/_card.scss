@@ -1,0 +1,26 @@
+.card {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.card img {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+    display: block;
+}
+
+.card-img {
+  padding: 12px;
+}
+
+.card .card-infos {
+  padding: 16px;
+  background: #EFE5D9;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

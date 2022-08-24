@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # resources :bookings, only: %i[edit update]
 
   # resources :users
+
 end
