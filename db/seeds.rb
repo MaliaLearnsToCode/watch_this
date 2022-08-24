@@ -15,36 +15,132 @@ User.destroy_all
 Review.destroy_all
 
 puts 'Creating Users ...'
-user1 = User.create!(email: 'felita@lewagon.com', password: '12345678', first_name: 'Felita', last_name: 'Liem')
-user2 = User.create!(email: 'malia@lewagon.com', password: '12345678', first_name: 'Malia', last_name: 'Newgen')
-user3 = User.create!(email: 'danish@lewagon.com', password: '12345678', first_name: 'Danish', last_name: 'Hisham')
-user4 = User.create!(email: 'julian@lewagon.com', password: '12345678', first_name: 'Julian', last_name: 'Wong')
-user5 = User.create!(email: 'alfred@lewagon.com', password: '12345678', first_name: 'Alfred', last_name: 'Tay')
-user6 = User.create!(email: 'ashley@lewagon.com', password: '12345678', first_name: 'Ashley Ignatius', last_name: 'Yeo')
-user7 = User.create!(email: 'grace@lewagon.com', password: '12345678', first_name: 'Grace', last_name: 'Wong')
-user8 = User.create!(email: 'sarina@lewagon.com', password: '12345678', first_name: 'Sarina', last_name: 'Yeo')
-user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name: 'Hugo', last_name: 'Low')
-user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low')
+user1 = User.create!(email: 'felita@lewagon.com', password: '12345678', first_name: 'Felita', last_name: 'Liem', points: 1200)
+user2 = User.create!(email: 'malia@lewagon.com', password: '12345678', first_name: 'Malia', last_name: 'Newgen', points: 1200)
+user3 = User.create!(email: 'danish@lewagon.com', password: '12345678', first_name: 'Danish', last_name: 'Hisham', points: 400)
+user4 = User.create!(email: 'julian@lewagon.com', password: '12345678', first_name: 'Julian', last_name: 'Wong', points: 700)
+user5 = User.create!(email: 'alfred@lewagon.com', password: '12345678', first_name: 'Alfred', last_name: 'Tay', points: 100)
+user6 = User.create!(email: 'ashley@lewagon.com', password: '12345678', first_name: 'Ashley Ignatius', last_name: 'Yeo', points: 9900)
+user7 = User.create!(email: 'grace@lewagon.com', password: '12345678', first_name: 'Grace', last_name: 'Wong', points: 800)
+user8 = User.create!(email: 'sarina@lewagon.com', password: '12345678', first_name: 'Sarina', last_name: 'Yeo', points: 500)
+user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name: 'Hugo', last_name: 'Low', points: 600)
+user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low', points: 1700)
 
 puts 'Creating Watches ...'
-watch1 = Watch.create!(brand: 'Patek Philippe', model: 'Nautilus', year: 2022, price: 799.99, user: user1)
-watch2 = Watch.create!(brand: 'Lange & Söhne', model: 'Lange 1', year: 1986, price: 499.00, user: user2)
-watch3 = Watch.create!(brand: 'Audemars Piguet', model: 'Code 1165', year: 2019, price: 290.00, user: user3)
-watch4 = Watch.create!(brand: 'Rolex', model: 'Daytona', year: 1972, price: 1999.99, user: user1)
-watch5 = Watch.create!(brand: 'Audemars Piguet', model: 'Royal Oak Openwork', year: 2009, price: 850.99, user: user4)
-watch6 = Watch.create!(brand: 'Patek Philippe', model: 'Aquanaut', year: 2003, price: 799.99, user: user1)
-watch7 = Watch.create!(brand: 'Richard Mille', model: 'RM1', year: 2000, price: 1200.00, user: user1)
-watch8 = Watch.create!(brand: 'Cartier', model: 'Crash', year: 1967, price: 1599.00, user: user5)
+watch1 = Watch.create!(
+  brand: 'Patek Philippe',
+  model: 'Nautilus',
+  year: 2022,
+  price: 799.99,
+  user: user1,
+  avg_rating: 4.5,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 1)
+)
+
+watch2 = Watch.create!(
+  brand: 'Lange & Söhne',
+  model: 'Lange 1',
+  year: 1986,
+  price: 499.00,
+  user: user2,
+  avg_rating: 4.6,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 25)
+)
+
+watch3 = Watch.create!(
+  brand: 'Audemars Piguet',
+  model: 'Code 1165',
+  year: 2019,
+  price: 290.00,
+  user: user3,
+  avg_rating: 3.2,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 4)
+)
+
+watch4 = Watch.create!(
+  brand: 'Rolex',
+  model: 'Daytona',
+  year: 1972,
+  price: 1999.99,
+  user: user1,
+  avg_rating: 4.9,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 10)
+)
+
+watch5 = Watch.create!(
+  brand: 'Audemars Piguet',
+  model: 'Royal Oak Openwork',
+  year: 2009,
+  price: 850.99,
+  user: user4,
+  avg_rating: 4.2,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 18)
+)
+
+watch6 = Watch.create!(
+  brand: 'Patek Philippe',
+  model: 'Aquanaut',
+  year: 2003,
+  price: 799.99,
+  user: user4,
+  avg_rating: 4.1,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 21)
+)
+
+watch7 = Watch.create!(
+  brand: 'Richard Mille',
+  model: 'RM1',
+  year: 2000,
+  price: 1200.00,
+  user: user1,
+  avg_rating: 4.3,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 14)
+)
+
+watch8 = Watch.create!(
+  brand: 'Cartier',
+  model: 'Crash',
+  year: 1967,
+  price: 1599.00,
+  user: user5,
+  avg_rating: 4.6,
+  cleaning_price: 150,
+  delivery_price: 60,
+  start_date: Date.new(2022, 8, 31),
+  end_date: Date.new(2022, 9, 27)
+)
+
 
 puts 'Creating Bookings ...'
-booking1 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1500, watch: watch1, renter: user5, status: 'pending')
-booking2 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 26), total: 5000, watch: watch2, renter: user6, status: 'confirmed')
-booking3 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 27), total: 2311, watch: watch3, renter: user5, status: 'canceled')
-booking4 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1800, watch: watch4, renter: user7, status: 'pending')
-booking5 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1000, watch: watch5, renter: user8, status: 'pending')
-booking6 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed')
-booking7 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch7, renter: user9, status: 'canceled')
-booking8 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch8, renter: user1, status: 'canceled')
+booking1 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1500, watch: watch1, renter: user5, status: 'pending', cleaning_service: false, delivery: true)
+booking2 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 26), total: 5000, watch: watch2, renter: user6, status: 'confirmed', cleaning_service: false, delivery: false)
+booking3 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 27), total: 2311, watch: watch3, renter: user5, status: 'canceled', cleaning_service: false, delivery: true)
+booking4 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1800, watch: watch4, renter: user7, status: 'pending', cleaning_service: true, delivery: true)
+booking5 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1000, watch: watch5, renter: user8, status: 'pending', cleaning_service: true, delivery: true)
+booking6 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed', cleaning_service: false, delivery: false)
+booking7 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch7, renter: user9, status: 'canceled', cleaning_service: false, delivery: true)
+booking8 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch8, renter: user1, status: 'canceled', cleaning_service: true, delivery: true)
 
 puts 'Creating Reviews ...'
 review1 = Review.create(rating: 5, comment: 'Nice nice!', booking: booking1)
