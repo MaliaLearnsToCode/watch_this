@@ -5,3 +5,8 @@
 @import "navbar";
 @import "form";
 @import "card";
+@import "index-button";
+
+#watchlink a:link {
+  text-decoration: none;
+}
