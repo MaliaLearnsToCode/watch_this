@@ -32,36 +32,27 @@
             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Out on rental</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Canceled</button>
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Available</button>
           </li>
-          <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Available</button>
-        </li>
+
         </ul>
         <div class="tab-content" id="myTabContent">
-
           <!-- CONFIRMED TAB -->
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="row">
-              <%= render Booking.with_status('pending', current_user) %>
+              <%= render Booking.with_status('pending', @user) %>
             </div>
           </div>
 
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="row">
-
+              <%= render Booking.with_status('confirmed', @user) %>
             </div>
           </div>
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
-
-            </div>
-          </div>
-
-          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="row">
-
+              <%= render Booking.with_status('canceled', @user) %>
             </div>
           </div>
 
@@ -73,16 +64,16 @@
 
     <!-- Right column -->
     <div class="col-lg-3">
-      <div class="">
-       <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" %>
-       </div>
-       <div class="">
-        <p><strong><%= @user.first_name %></strong></p>
-        <p><%= @user.watches.count %> watches</p>
-       </div>
+      <div class= "margin-x" >
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier"%>
+      </div>
+      <div class="card-reserve" style="width: 12.5rem; height: 24rem;">
+        <div class="card-body" style=background-color:#EFE5D9;>
+          <p><strong><%= @user.first_name %>'s Profile</strong></p>
+          <p>Total watches: <u><strong><%= @user.watches.count %></strong></u></p>
+        </div>
       </div>
     </div>
-
 
 <hr>
 
@@ -93,6 +84,9 @@
     <%= render Watch.status('pending', current_user) %>
   </div>
 </div>
+
+
+
 
 <div class="d-none row">
   <h1>My Watches</h1>
@@ -105,13 +99,6 @@
       </div>
   </div>
   <div class="">
-    <div class="">
-      <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" %>
-    </div>
-    <div class="">
-      <p><strong><%= @user.first_name %></strong></p>
-      <p><%= @user.watches.count %> watches</p>
-  </div>
   <div>
 
   </div>

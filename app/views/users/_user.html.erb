@@ -1,0 +1,21 @@
+<div class="">
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" %>
+</div>
+<div class="">
+  <p><strong><%= @user.first_name %></strong></p>
+  <p><%= @user.watches.count %> watches</p>
+</div>
+
+<div class="card-reserve" style="width: 18rem; height: 24rem;">
+      <div class="card-body" style="background-color:#EFE5D9;">
+        <% @bookings.each do |booking| %>
+        <h5 class="card-title"><%= "Total: #{booking.watch.price}" %></h5>
+        <p class="card-text"><% days = booking.end_date - booking.start_date %><%= "#{days} Days" %></p>
+        <p class="card-text"><%= booking.start_date %></p>
+        <p class="card-text"><%=booking.end_date %></p>
+        <% end %>
+      </div>
+      <div class="card-body">
+        <button link_to new_watch_booking_path(@watch), class="btn btn-outline-secondary my-2 my-sm-0" type="submit">RESERVE</button>
+      </div>
+    </div>
