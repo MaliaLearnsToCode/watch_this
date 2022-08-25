@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # resources :users
 
   resources :users do
-    resources :watches, only: %i[show]
+    resources :watches, only: %i[new create show destroy edit update]
   end
 
   resources :watches do
