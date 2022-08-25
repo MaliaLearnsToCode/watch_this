@@ -4,13 +4,12 @@ class BookingPolicy < ApplicationPolicy
     # def resolve
     #   scope.all
     # end
-  end
-
     def resolve
       scope.all
     end
   end
-  
+
+
   def create?
       true
     end
@@ -18,5 +17,5 @@ class BookingPolicy < ApplicationPolicy
   def success?
     true
   end
-  
+
 end
