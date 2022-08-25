@@ -3,10 +3,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
-  resources :bookings
-  resources :watches
-  resources :users
-  root to: 'watches#index'
+  # resources :bookings
+  # resources :watches
+  # resources :users
+
+  resources :users do
+    resources :watches, only: %i[show]
+  end
 
   resources :watches do
     resources :bookings, only: %i[new create]

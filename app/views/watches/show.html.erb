@@ -1,21 +1,11 @@
-<div class="grid-container">
-  <nav role="tablist" class="grid-x align-justify align-middle">
-    <hr>
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">WATCH THIS</a>
-        <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
-        <div class="collapse navbar-collapse">
-          <div class="ms-auto flex">
-          </div>
-        </div>
-      </div>
-    <hr>
-  </nav>
-</div>
-
 <div class="container">
+  <div class="signature">
+      <hr>
+      <h2><%= "Is this #{@watch.model} the watch you've been dreaming of?" %></h2>
+      <hr>
+  </div>
 
-  <div class="container-image">
+  <div class="container-image mb-5">
     <div id="single-watch-photo" class="row">
       <div class = 'col-4'>
       <%= image_tag("img_1.jpg", height: '280', width: '280') %>
@@ -29,29 +19,31 @@
     </div>
   </div>
 
-
-  <div class="d-flex justify-content-center">
-    <div class="container w-100">
-        <div class="card-details">
-          <h2> <%= @watch.model  %> </h2>
-          <p><strong>Brand: </strong><%= @watch.brand %></p>
-          <p><strong>Model: </strong><%= @watch.model  %></li></p>
-          <p><strong>Year: </strong><%= @watch.year  %></li></p>
-          <p><strong>Price per day: </strong><%= @watch.price %></li></p>
-        </div>
+  <div class="d-flex justify-content-between mt-5">
+    <div class="card-info border-0 mr-5 ml-0" style="width: 24rem; height: 16rem;">
+      <div class="card-body">
+        <h3 class="card-title" style="color:#9CA89C"><%= @watch.model %></h3>
+        <h6 class="card-subtitle mb-2 text-muted"><strong>Brand: </strong><%= @watch.brand %></h6>
+        <p class="card-text"><strong>Model: </strong><%= @watch.model  %></p>
+        <p class="card-text"><strong>Year: </strong><%= @watch.year  %></p>
+        <p class="card-text"><strong>Price per day: </strong><%= @watch.price %></p>
       </div>
+    </div>
 
-    <div class="d-flex justify-content-center card-reserve">
-      <% @bookings.each do |booking| %>
-        <%= "Total: #{booking.watch.price}" %>
-        <% days = booking.start_date - booking.end_date %>
-        <%= "#{days} Days" %>
-        <%= booking.start_date %>
-        <%=booking.end_date %>
-      <% end %>
-
-      <button link_to new_watch_booking_path(@watch), class="btn btn-outline-secondary my-2 my-sm-0" type="submit">RESERVE</button>
+    <div class="card-reserve" style="width: 18rem; height: 24rem;">
+      <div class="card-body" style="background-color:#9CA89C;">
+        <% @bookings.each do |booking| %>
+        <h5 class="card-title"><%= "Total: #{booking.watch.price}" %></h5>
+        <p class="card-text"><% days = booking.end_date - booking.start_date %><%= "#{days} Days" %></p>
+        <p class="card-text"><%= booking.start_date %></p>
+        <p class="card-text"><%=booking.end_date %></p>
+        <% end %>
+      </div>
+      <div class="card-body">
+        <button link_to new_watch_booking_path(@watch), class="btn btn-outline-secondary my-2 my-sm-0" type="submit">RESERVE</button>
+      </div>
     </div>
   </div>
 
+  <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
 </div>
