@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   # Defines the root path route ("/")
-  root "pages#home"
+  root "watches#index"
   # resources :bookings
   # resources :watches
   # resources :users
