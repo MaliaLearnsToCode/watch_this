@@ -6,9 +6,15 @@ class Booking < ApplicationRecord
   validates :end_date, presence: true
   validates :total, presence: true
   validates :status, presence: true
+
   scope :with_status, ->(booking_status, current_user) do
   where(status: booking_status).joins(:watch).where('watches.user': current_user)
   end
+
+  geocoded_by :meetup_location
+  geocoded_by :delivery_location
+  after_validation :geocode, if: :will_save_change_to_meetup_location?
+  after_validation :geocode, if: :will_save_change_to_delivery_location?
 
   def total_price
     # get the days

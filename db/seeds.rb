@@ -15,16 +15,16 @@ User.destroy_all
 Review.destroy_all
 
 puts 'Creating Users ...'
-user1 = User.create!(email: 'felita@lewagon.com', password: '12345678', first_name: 'Felita', last_name: 'Liem', points: 1200)
-user2 = User.create!(email: 'malia@lewagon.com', password: '12345678', first_name: 'Malia', last_name: 'Newgen', points: 1200)
-user3 = User.create!(email: 'danish@lewagon.com', password: '12345678', first_name: 'Danish', last_name: 'Hisham', points: 400)
-user4 = User.create!(email: 'julian@lewagon.com', password: '12345678', first_name: 'Julian', last_name: 'Wong', points: 700)
-user5 = User.create!(email: 'alfred@lewagon.com', password: '12345678', first_name: 'Alfred', last_name: 'Tay', points: 100)
-user6 = User.create!(email: 'ashley@lewagon.com', password: '12345678', first_name: 'Ashley Ignatius', last_name: 'Yeo', points: 9900)
-user7 = User.create!(email: 'grace@lewagon.com', password: '12345678', first_name: 'Grace', last_name: 'Wong', points: 800)
-user8 = User.create!(email: 'sarina@lewagon.com', password: '12345678', first_name: 'Sarina', last_name: 'Yeo', points: 500)
-user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name: 'Hugo', last_name: 'Low', points: 600)
-user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low', points: 1700)
+user1 = User.create!(email: 'felita@lewagon.com', password: '12345678', first_name: 'Felita', last_name: 'Liem', points: 1200, address: "Marina Boulevard, Singapore")
+user2 = User.create!(email: 'malia@lewagon.com', password: '12345678', first_name: 'Malia', last_name: 'Newgen', points: 1200, address: "Strait View 1, Singapore")
+user3 = User.create!(email: 'danish@lewagon.com', password: '12345678', first_name: 'Danish', last_name: 'Hisham', points: 400, address: "927 Bukit Timah Road, Singapore")
+user4 = User.create!(email: 'julian@lewagon.com', password: '12345678', first_name: 'Julian', last_name: 'Wong', points: 700, address: "20 Collyer, Singapore")
+user5 = User.create!(email: 'alfred@lewagon.com', password: '12345678', first_name: 'Alfred', last_name: 'Tay', points: 100, address: "Botanical Garden, Singapore")
+user6 = User.create!(email: 'ashley@lewagon.com', password: '12345678', first_name: 'Ashley Ignatius', last_name: 'Yeo', points: 9900, address: "33 Robin Road, Singapore")
+user7 = User.create!(email: 'grace@lewagon.com', password: '12345678', first_name: 'Grace', last_name: 'Wong', points: 800, address: "Raffles Place MRT, Singapore")
+user8 = User.create!(email: 'sarina@lewagon.com', password: '12345678', first_name: 'Sarina', last_name: 'Yeo', points: 500, address: "Stevens MRT, Singapore")
+user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name: 'Hugo', last_name: 'Low', points: 600, address: "Ion Orchard, Singapore")
+user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low', points: 1700, address: "88 Namly Avenue, Singapore")
 
 puts 'Creating Watches ...'
 watch1 = Watch.create!(
@@ -131,14 +131,16 @@ watch8 = Watch.create!(
   end_date: Date.new(2022, 9, 27)
 )
 
+add_column :bookings, :meetup_location, :string
+add_column :bookings, :delivery_location, :string
 
 puts 'Creating Bookings ...'
 booking1 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1500, watch: watch1, renter: user5, status: 'pending', cleaning_service: false, delivery: true)
-booking2 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 26), total: 5000, watch: watch2, renter: user6, status: 'confirmed', cleaning_service: false, delivery: false)
+booking2 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 26), total: 5000, watch: watch2, renter: user6, status: 'confirmed', meetup_location: "76 Robinson, Singapore", cleaning_service: false, delivery: false)
 booking3 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 27), total: 2311, watch: watch3, renter: user5, status: 'canceled', cleaning_service: false, delivery: true)
 booking4 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1800, watch: watch4, renter: user7, status: 'pending', cleaning_service: true, delivery: true)
 booking5 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1000, watch: watch5, renter: user8, status: 'pending', cleaning_service: true, delivery: true)
-booking6 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed', cleaning_service: false, delivery: false)
+booking6 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed', delivery_location: "610 Upper East Coast Road, Singapore", cleaning_service: false, delivery: false)
 booking7 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch7, renter: user9, status: 'canceled', cleaning_service: false, delivery: true)
 booking8 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch8, renter: user1, status: 'canceled', cleaning_service: true, delivery: true)
 
