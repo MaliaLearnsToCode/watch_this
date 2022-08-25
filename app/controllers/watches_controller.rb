@@ -29,6 +29,12 @@ class WatchesController < ApplicationController
     end
   end
 
+  def destroy
+    @watch = Watch.find(params[:id])
+    @watch.destroy
+    redirect_to user_path(watch.user)
+  end
+
   private
 
   def set_watch

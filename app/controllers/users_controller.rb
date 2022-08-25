@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+
     # def watch_params
     #   params.require(:watch).permit()
     # end

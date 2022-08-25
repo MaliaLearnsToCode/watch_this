@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="d-flex justify-content-between mt-5">
+  <div class="d-flex justify-content-between mt-5" style="height: 250px;">
     <div class="card-info border-0 mr-5 ml-0" style="width: 24rem; height: 16rem;">
       <div class="card-body">
         <h3 class="card-title" style="color:#9CA89C"><%= @watch.model %></h3>
@@ -35,8 +35,8 @@
         <% @bookings.each do |booking| %>
         <h5 class="card-title"><%= "Total: #{booking.watch.price}" %></h5>
         <p class="card-text"><% days = booking.end_date - booking.start_date %><%= "#{days} Days" %></p>
-        <p class="card-text"><%= "Start Date: #{booking.start_date}" %></p>
-        <p class="card-text"><%= "End Date: #{booking.end_date}" %></p>
+        <p class="card-text"><%= "From: #{booking.start_date}" %></p>
+        <p class="card-text"><%= "To: #{booking.end_date}" %></p>
         <% end %>
       </div>
       <div class="card-body" style="margin:0 0 0 188px;">
