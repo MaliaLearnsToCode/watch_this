@@ -14,6 +14,12 @@ Rails.application.routes.draw do
   resources :watches do
     resources :bookings, only: %i[new create show]
   end
+
+  resources :bookings do
+    member do
+      get :success
+    end
+  end
   # resources :bookings, only: %i[edit update]
 
   # resources :users
