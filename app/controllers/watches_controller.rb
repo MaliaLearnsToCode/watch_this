@@ -35,6 +35,7 @@ class WatchesController < ApplicationController
     redirect_to user_path(watch.user)
   end
 
+
   private
 
   def set_watch
