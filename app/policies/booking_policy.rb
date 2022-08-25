@@ -6,7 +6,17 @@ class BookingPolicy < ApplicationPolicy
     # end
   end
 
-    def create?
+    def resolve
+      scope.all
+    end
+  end
+  
+  def create?
       true
     end
+
+  def success?
+    true
+  end
+  
 end

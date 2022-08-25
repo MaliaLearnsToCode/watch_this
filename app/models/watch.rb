@@ -6,4 +6,7 @@ class Watch < ApplicationRecord
   validates :brand, presence: true
   validates :model, presence: true
   validates :year, presence: true
+
+  scope :status, ->(booking_status, current_user) { Watch.where(user: current_user).joins(:bookings).where('bookings.status': booking_status) }
+
 end
