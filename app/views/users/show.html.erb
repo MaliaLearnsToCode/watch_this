@@ -26,36 +26,45 @@
         <!-- TABS START -->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Pending</button>
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Pending Requests</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Confirmed</button>
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Out on rental</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Canceled</button>
           </li>
+          <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Available</button>
+        </li>
         </ul>
         <div class="tab-content" id="myTabContent">
 
           <!-- CONFIRMED TAB -->
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="row">
-              <%= render Watch.status('pending', current_user) %>
+              <%= render Booking.with_status('pending', current_user) %>
             </div>
           </div>
 
-
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="row">
-              <%= render Watch.status('confirmed', current_user) %>
+
             </div>
           </div>
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
-              <%= render Watch.status('canceled', current_user) %>
+
             </div>
           </div>
+
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+
+            </div>
+          </div>
+
         </div>
         <!-- TABS END -->
 
@@ -64,13 +73,26 @@
 
     <!-- Right column -->
     <div class="col-lg-3">
-      <strong>Display details here</strong>
+      <div class="">
+       <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" %>
+       </div>
+       <div class="">
+        <p><strong><%= @user.first_name %></strong></p>
+        <p><%= @user.watches.count %> watches</p>
+       </div>
+      </div>
     </div>
-  </div>
-</div>
+
 
 <hr>
 
+<h2>Past Rentals</h2>
+<div class="">
+
+  <div class="d-flex col-9">
+    <%= render Watch.status('pending', current_user) %>
+  </div>
+</div>
 
 <div class="d-none row">
   <h1>My Watches</h1>

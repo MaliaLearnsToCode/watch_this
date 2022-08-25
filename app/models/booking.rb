@@ -6,4 +6,8 @@ class Booking < ApplicationRecord
   validates :end_date, presence: true
   validates :total, presence: true
   validates :status, presence: true
+
+  scope :with_status, ->(booking_status, current_user) do
+    where(status: booking_status).joins(:watch).where('watches.user': current_user)
+  end
 end
