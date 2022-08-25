@@ -1,0 +1,27 @@
+<div class="grid-container">
+  <nav role="tablist" class="grid-x align-justify align-middle">
+    <hr>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">WATCH THIS</a>
+        <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
+        <div class="collapse navbar-collapse">
+          <div class="ms-auto flex">
+          </div>
+        </div>
+      </div>
+    <hr>
+  </nav>
+</div>
+
+
+<div class="new-watch m-3">
+  <h1> <strong>Rent your watch</strong> !</h1>
+  <%= simple_form_for [ @user, @watch ] do |f| %>
+    <%= f.input :brand %>
+    <%= f.input :model %>
+    <%= f.input :year %>
+    <%= f.input :price %>
+    <%= f.input :photo, as: :file %>
+    <%= f.submit "Submit", class: "btn btn-success" %>
+  <% end %>
+</div>
