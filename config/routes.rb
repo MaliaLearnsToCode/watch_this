@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   resources :watches do
-    resources :bookings, only: %i[new create]
+    resources :bookings, only: %i[new create show]
   end
   # resources :bookings, only: %i[edit update]
 
