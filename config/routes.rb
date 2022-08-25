@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   resources :watches do
     resources :bookings, only: %i[new create]
   end
-  # resources :bookings, only: %i[edit update]
+
+  resources :bookings, only: %i[destroy]
 
   # resources :users
 end
