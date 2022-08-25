@@ -32,7 +32,7 @@ class WatchesController < ApplicationController
   def destroy
     @watch = Watch.find(params[:id])
     @watch.destroy
-    redirect_to user_path(watch.user)
+    redirect_to user_path(watch.user), status: :see_other
   end
 
 

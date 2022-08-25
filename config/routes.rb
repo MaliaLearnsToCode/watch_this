@@ -8,13 +8,20 @@ Rails.application.routes.draw do
   # resources :users
 
   resources :users do
-    resources :watches, only: %i[show]
+    resources :watches, only: %i[new create show destroy edit update]
   end
 
   resources :watches do
-    resources :bookings, only: %i[new create]
+    resources :bookings, only: %i[new create show]
   end
-  # resources :bookings, only: %i[edit update]
+
+  resources :bookings do
+    member do
+      get :success
+    end
+  end
+
+  resources :bookings, only: %i[destroy]
 
   # resources :users
 end
