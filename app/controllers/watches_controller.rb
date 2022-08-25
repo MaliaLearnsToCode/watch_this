@@ -19,12 +19,11 @@ class WatchesController < ApplicationController
 
   def create
     @watch = Watch.new(watch_params)
-    @user = User.find(params[:user_id])
     @watch.user = current_user # when in view: we can do this "<%= @watch.user.name %>""
     authorize @watch
     # respond_to do |format| ...etc
     if @watch.save
-      redirect_to user_path(@user)
+      redirect_to user_path(current_user)
     else
       render :new, status: :unprocessable_entity
     end
