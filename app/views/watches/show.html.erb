@@ -30,20 +30,22 @@
       </div>
     </div>
 
-    <div class="card-reserve" style="width: 18rem; height: 24rem;">
+    <div class="card-reserve" style="width: 18rem; height: 24rem; margin: 0 60px 0 0; ">
       <div class="card-body" style="background-color:#9CA89C;">
         <% @bookings.each do |booking| %>
         <h5 class="card-title"><%= "Total: #{booking.watch.price}" %></h5>
         <p class="card-text"><% days = booking.end_date - booking.start_date %><%= "#{days} Days" %></p>
-        <p class="card-text"><%= booking.start_date %></p>
-        <p class="card-text"><%=booking.end_date %></p>
+        <p class="card-text"><%= "Start Date: #{booking.start_date}" %></p>
+        <p class="card-text"><%= "End Date: #{booking.end_date}" %></p>
         <% end %>
       </div>
-      <div class="card-body">
+      <div class="card-body" style="margin:0 0 0 188px;">
         <button link_to new_watch_booking_path(@watch), class="btn btn-outline-secondary my-2 my-sm-0" type="submit">RESERVE</button>
       </div>
     </div>
   </div>
 
+  <div style="margin: 0 0 50px 0;">
   <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
+  </div>
 </div>
