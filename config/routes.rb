@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   devise_for :users
 
   # Defines the root path route ("/")
+
+  root "pages#home"
+  resources :watches
+  resources :users
+  # root to: 'watches#index'
+
   root "watches#index"
   # resources :bookings
   # resources :watches
@@ -11,9 +17,14 @@ Rails.application.routes.draw do
     resources :watches, only: %i[new create show destroy edit update]
   end
 
+
   resources :watches do
     resources :bookings, only: %i[new create show]
   end
+
+
+  resources :bookings, except: %i[new create]
+  # resources :bookings, only: %i[edit update]
 
   resources :bookings do
     member do
@@ -22,6 +33,7 @@ Rails.application.routes.draw do
   end
 
   resources :bookings, only: %i[destroy]
+
 
   # resources :users
 end
