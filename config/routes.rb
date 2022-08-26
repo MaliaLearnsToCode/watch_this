@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   # resources :bookings
   # resources :bookings, only: %i[edit update]
 
-  resources :bookings, except: %i[new create edit update edit] do
+  resources :bookings, except: %i[new create edit ] do
     member do
       get :success
     end

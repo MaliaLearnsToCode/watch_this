@@ -26,8 +26,12 @@ class BookingsController < ApplicationController
     end
   end
 
-  def edit
+  def cancel
     @booking = Booking.find(params[:id])
+    authorize @booking
+    @booking.status = params[:status]
+    @booking.save!
+    redirect_to bookings_user_path(current_user)
   end
 
   def delete
