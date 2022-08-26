@@ -206,7 +206,7 @@ review1 = Review.create(rating: 1, comment: 'Awful awful!', booking: booking6)
 #   has_many :watches
 # end
 
-# class RestaurantaController < ApplictionsController
+# class WatchController < ApplictionsController
 #   before_action :set_watch, only %i[show edit update destroy
 
     # def index

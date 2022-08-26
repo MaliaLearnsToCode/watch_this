@@ -1,0 +1,118 @@
+<div class="grid-container">
+  <nav role="tablist" class="grid-x align-justify align-middle">
+    <hr>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">WATCH THIS</a>
+        <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
+        <div class="collapse navbar-collapse">
+          <div class="ms-auto flex">
+          </div>
+        </div>
+      </div>
+    <hr>
+  </nav>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <!-- Left column -->
+    <div class="col-lg-9">
+      <h1>My Watches</h1>
+
+      <div class="row">
+
+        <!-- TABS START -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Pending Requests</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Out on rental</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Canceled</button>
+          </li>
+          <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Available</button>
+        </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+
+          <!-- CONFIRMED TAB -->
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <%= render Booking.with_status('pending', current_user) %>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row">
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row">
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+
+            </div>
+          </div>
+
+        </div>
+        <!-- TABS END -->
+
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="col-lg-3">
+      <div class="">
+       <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" %>
+       </div>
+       <div class="">
+        <p><strong><%= @user.first_name %></strong></p>
+        <p><%= @user.watches.count %> watches</p>
+       </div>
+      </div>
+    </div>
+
+
+<hr>
+
+<h2>Past Rentals</h2>
+<div class="">
+
+  <div class="d-flex col-9">
+    <%= render Watch.status('pending', current_user) %>
+  </div>
+</div>
+
+<div class="d-none row">
+  <h1>My Watches</h1>
+  <div class="container d-flex">
+    <div class="">
+      <div class="d-flex col-10">
+
+        <%= render @watches %>
+
+      </div>
+  </div>
+  <div class="">
+    <div class="">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier" %>
+    </div>
+    <div class="">
+      <p><strong><%= @user.first_name %></strong></p>
+      <p><%= @user.watches.count %> watches</p>
+  </div>
+  <div>
+
+  </div>
+</div>

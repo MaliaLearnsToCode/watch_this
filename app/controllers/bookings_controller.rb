@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
+  before_action :set_booking, only: %i[new show success]
 
   def new
+    @bookings = Booking.new
     @watch = Watch.find(params[:watch_id])
     @user = @watch.user
     @booking = Booking.new
@@ -24,10 +26,20 @@ class BookingsController < ApplicationController
     end
   end
 
+   def success
+    @watch = @booking.watch
+    @success = @booking.watch
+    authorize @booking
+  end
+
   private
 
   def booking_params
     params.require(:booking).permit(:delivery, :cleaning_service)
+  end
+
+  def set_booking
+    @booking = Booking.find(params[:id])
   end
 
 end

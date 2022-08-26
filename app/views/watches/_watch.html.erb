@@ -4,10 +4,10 @@
     <div class="card-infos">
       <div>
         <div class="d-flex justify-content-between">
-          <div>
-            <p><strong><%= watch.brand %></strong></p>
+          <div id="watchlink">
+            <p><strong><%= link_to watch.brand, user_watch_path(watch.user, watch) %></strong></p>
             <p><%= watch.model %></p>
-            <p><%= watch.year%></p>
+
           </div>
           <div>
           <span class="fa fa-star"></span>
@@ -18,7 +18,15 @@
       <div class="d-flex justify-content-between" style="background-color:#EFE5D9;">
         <p><%= watch.year%></p>
         <p><strong>$<%= watch.price %></strong></p>
+
       </div>
+      <p><u>Available from:</u></p>
+      <p>
+        <strong><%= watch.start_date%> to <%= watch.end_date%></strong>
+      </p>
+
+      <%= link_to "see details", watch_path(watch), class: "btn btn-outline-secondary mx-4" %>
+
       </div>
   </div>
 </div>
