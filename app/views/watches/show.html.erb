@@ -48,7 +48,7 @@
         <p class="card-text"><% days = (booking.end_date - booking.start_date).to_i %><%= "#{days} Day(s)" %></p>
         <h5 class="card-title"><%= "Total: $ #{booking.watch.price * days}" %></h5>
         <div class="card-body" style="margin:0 0 0 0;">
-          <button link_to new_watch_booking_path(@watch), class="btn btn-outline-success bg-opacity-35 my-2 my-sm-0" type="submit">RESERVE THIS WATCH</button>
+          <div class="btn btn-outline-success bg-opacity-35 my-2 my-sm-0"><%= link_to "RESERVE THIS WATCH", new_watch_booking_path(@watch)%></div>
         </div>
         <% end %>
       </div>
