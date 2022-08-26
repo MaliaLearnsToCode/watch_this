@@ -50,7 +50,7 @@
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
-              <%= render Booking.with_status('available', @user) %>
+              <%= render 'watch_user', watches: Watch.status_available(current_user) %>
             </div>
           </div>
 

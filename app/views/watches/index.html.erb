@@ -1,5 +1,10 @@
-<h1>Watches</h1>
+<h5 style="margin:10px 10px 5px 20px;">Rent beautiful watches</h5>
+<div class="btn btn-success btn-xs" id="index-button">
+  <%= link_to "Add new booking", new_watch_path, :class => "btn" %>
+</div>
+<hr>
 <%= link_to "Rent out your watch", new_watch_path, class: "btn btn-outline-secondary mx-4" %>
+
 <div class="container">
 
 <form action="/watches">
@@ -10,9 +15,21 @@
   <input type="submit" value="Submit">
 </form>
 
-  <div class="row">
-    <% @watches.each do |watch| %>
-      <%= render watch, watch: watch %>
-    <% end %>
-  </div>
+<div class="text-center">
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="all">All</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Patek Philippe">Patek Philippe</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Lange & Söhne">Lange & Söhne</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Audemars Piguet">Audemars Piguet</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Rolex">Rolex</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Richard Mille">Richard Mille</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Cartier">Cartier</button>
+</div>
+
+<div class="row">
+  <% @watches.each do |watch| %>
+    <%= render watch, watch: watch %>
+  <% end %>
+</div>
+
+
 </div>
