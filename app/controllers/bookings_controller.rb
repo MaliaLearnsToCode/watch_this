@@ -1,7 +1,8 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: %i[new show success]
+  before_action :set_booking, only: %i[create show success]
 
   def new
+
     @bookings = Booking.new
     @watch = Watch.find(params[:watch_id])
     @user = @watch.user
@@ -10,6 +11,7 @@ class BookingsController < ApplicationController
   end
 
   def create
+    raise
     @watch = Watch.find(params[:watch_id])
     @booking = Booking.new(booking_params)
     @booking.renter = current_user
