@@ -3,8 +3,16 @@ class WatchesController < ApplicationController
   before_action :set_watch, only: %i[show edit update destroy]
 
   def index
-    @watches = Watch.all
-    @watches = policy_scope(Watch)
+    if params[:start_date].present? && params[:end_date].present?
+      start_date = params[:start_date].to_date
+      end_date = params[:end_date].to_date
+      @watches = Watch.within_date(start_date, end_date)
+      @watches = policy_scope(Watch.within_date(start_date, end_date))
+    else
+      @watches = Watch.all
+      @watches = policy_scope(Watch)
+    end
+
   end
 
   def show
