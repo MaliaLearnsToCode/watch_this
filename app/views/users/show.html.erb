@@ -80,6 +80,8 @@
         <div class="card-body" style=background-color:#EFE5D9;>
           <p><strong><%= @user.first_name %>'s Profile</strong></p>
           <p>Total watches: <u><strong><%= @user.watches.count %></strong></u></p>
+            <div class="d-flex col-9">
+            </div>
         </div>
       </div>
     </div>
@@ -95,6 +97,7 @@
 
   <div class="d-flex col-9">
     <%= render Watch.status('pending', current_user) %>
+
   </div>
 
 

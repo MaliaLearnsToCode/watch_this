@@ -26,7 +26,9 @@
       </p>
 
       <%= link_to "see details", watch_path, class: "btn btn-outline-secondary mx-4" %>
-
+      <% if booking.status == "pending" %>
+        <%= link_to "cancel", user_path, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-outline-secondary mx-4" %>
+      <% end %>
       </div>
   </div>
 </div>

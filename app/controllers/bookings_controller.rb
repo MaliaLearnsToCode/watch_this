@@ -2,7 +2,6 @@ class BookingsController < ApplicationController
   before_action :set_booking, only: %i[create show success]
 
   def new
-
     @bookings = Booking.new
     @watch = Watch.find(params[:watch_id])
     @user = @watch.user
@@ -11,7 +10,6 @@ class BookingsController < ApplicationController
   end
 
   def create
-    raise
     @watch = Watch.find(params[:watch_id])
     @booking = Booking.new(booking_params)
     @booking.renter = current_user
@@ -28,7 +26,17 @@ class BookingsController < ApplicationController
     end
   end
 
-   def success
+  def edit
+    @booking = Booking.find(params[:id])
+  end
+
+  def delete
+    @booking = Booking.find(params[:id])
+    @booking.destroy
+    redirect_to booking.status("available"), status: :see_other
+  end
+
+  def success
     @watch = @booking.watch
     @success = @booking.watch
     authorize @booking
@@ -43,5 +51,4 @@ class BookingsController < ApplicationController
   def set_booking
     @booking = Booking.find(params[:id])
   end
-
 end
