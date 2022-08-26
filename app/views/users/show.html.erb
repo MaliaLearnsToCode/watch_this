@@ -53,7 +53,8 @@
             </div>
           </div>
 
-          # CHANGE AVAILABLE TO TO WATCHES THAT HAVE NO CURRENT BOOKINGS
+          ## SET DATE TO BE DATES BEFORE DATE.TODAY
+          ## CHANGE AVAILABLE TO WATCHES THAT HAVE NO PENDING/COMFIRMED BOOKINGS
           ## NEW WATCHES && WATCHES WITH NO CURRENT BOOKINGS WITHIN TIMEFRAME
           ## ADD DELETE FEATURE ON AVAILABLE
           ## ADD DELETE FEATURE FOR ACCOUNT
@@ -80,6 +81,7 @@
         <div class="card-body" style=background-color:#EFE5D9;>
           <p><strong><%= @user.first_name %>'s Profile</strong></p>
           <p>Total watches: <u><strong><%= @user.watches.count %></strong></u></p>
+          <%= link_to "Delete Account", watches_path, class: "btn btn-outline-secondary mx-4" %>
         </div>
       </div>
     </div>
