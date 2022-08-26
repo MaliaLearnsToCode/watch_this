@@ -4,6 +4,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="/">WATCH THIS</a>
         <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
+        <%= link_to 'Add New Watch', new_watch_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
         <div class="collapse navbar-collapse">
           <div class="ms-auto flex">
           </div>
@@ -49,14 +50,10 @@
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
-              <%= render Booking.with_status('canceled', @user) %>
+              <%= render Booking.with_status('available', @user) %>
             </div>
           </div>
 
-          # CHANGE AVAILABLE TO TO WATCHES THAT HAVE NO CURRENT BOOKINGS
-          ## NEW WATCHES && WATCHES WITH NO CURRENT BOOKINGS WITHIN TIMEFRAME
-          ## ADD DELETE FEATURE ON AVAILABLE
-          ## ADD DELETE FEATURE FOR ACCOUNT
           ## MAKE SURE NEW WATCHES ARE ADDED FROM WATCHES/NEW
 
 
@@ -73,15 +70,13 @@
         <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier"%>
       </div>
 
-       # ADD CLOUDINARY HERE
-       # ADD REVIEW FOR OWNER
+       # @user.avg_review
 
       <div class="card-reserve" style="width: 12.5rem; height: 24rem;">
         <div class="card-body" style=background-color:#EFE5D9;>
           <p><strong><%= @user.first_name %>'s Profile</strong></p>
           <p>Total watches: <u><strong><%= @user.watches.count %></strong></u></p>
-            <div class="d-flex col-9">
-            </div>
+                    <%= link_to "Delete Account", watches_path, class: "btn btn-outline-secondary mx-4" %>
         </div>
       </div>
     </div>
@@ -90,14 +85,9 @@
 
 <h2>Past Rentals</h2>
 <div class="">
-  # CHANGE TO ALL WATCHES THAT END_DATE IS OVER.
-  ## TOTALS THE SUM AMOUNT IF THERE IS BOOKING
-  ## NO BOOKING - NO AMOUNT
-  ## MAKE COLOR OPAQUE
-
+  <%= render Booking.completed_bookings(@user) %>
   <div class="d-flex col-9">
     <%= render Watch.status('pending', current_user) %>
-
   </div>
 
 
