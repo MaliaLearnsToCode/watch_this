@@ -6,11 +6,6 @@ Rails.application.routes.draw do
 
   # root to: 'watches#index'
 
-  root "watches#index"
-  # resources :bookings
-  # resources :watches
-  # resources :users
-
   resources :users do
     resources :watches, only: %i[new create show destroy edit update]
   end

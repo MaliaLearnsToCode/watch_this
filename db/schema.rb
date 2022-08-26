@@ -53,6 +53,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_25_155509) do
     t.datetime "updated_at", null: false
     t.boolean "cleaning_service", default: false
     t.boolean "delivery", default: false
+    t.boolean "completed"
     t.float "latitude"
     t.float "longitude"
     t.string "meetup_location"

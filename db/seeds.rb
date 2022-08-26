@@ -133,24 +133,33 @@ watch8 = Watch.create!(
 
 
 puts 'Creating Bookings ...'
-booking1 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1500, watch: watch1, renter: user5, status: 'pending', cleaning_service: false, delivery: true)
-booking2 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 26), total: 5000, watch: watch2, renter: user6, status: 'confirmed', meetup_location: "76 Robinson, Singapore", cleaning_service: false, delivery: false)
-booking3 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 27), total: 2311, watch: watch3, renter: user5, status: 'canceled', cleaning_service: false, delivery: true)
-booking4 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1800, watch: watch4, renter: user7, status: 'pending', cleaning_service: true, delivery: true)
-booking5 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1000, watch: watch5, renter: user8, status: 'pending', cleaning_service: true, delivery: true)
-booking6 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed', delivery_location: "610 Upper East Coast Road, Singapore", cleaning_service: false, delivery: false)
-booking7 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch7, renter: user9, status: 'canceled', cleaning_service: false, delivery: true)
-booking8 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch8, renter: user1, status: 'canceled', cleaning_service: true, delivery: true)
+booking1 = Booking.create(start_date: Date.new(2022, 7, 20), end_date: Date.new(2022, 7, 25), total: 1500, watch: watch1, renter: user5, status: 'confirmed', cleaning_service: false, delivery: true, completed: true)
+booking2 = Booking.create(start_date: Date.new(2022, 7, 21), end_date: Date.new(2022, 7, 24), total: 5000, watch: watch2, renter: user6, status: 'confirmed', cleaning_service: false, delivery: false, completed: false)
+booking3 = Booking.create(start_date: Date.new(2022, 7, 21), end_date: Date.new(2022, 7, 29), total: 2311, watch: watch3, renter: user5, status: 'canceled', cleaning_service: false, delivery: true, completed: false)
+booking4 = Booking.create(start_date: Date.new(2022, 7, 23), end_date: Date.new(2022, 7, 29), total: 1800, watch: watch4, renter: user7, status: 'confirmed', cleaning_service: true, delivery: true, completed: false)
+booking5 = Booking.create(start_date: Date.new(2022, 7, 24), end_date: Date.new(2022, 7, 30), total: 1000, watch: watch5, renter: user8, status: 'confirmed', cleaning_service: true, delivery: true, completed: true)
+booking6 = Booking.create(start_date: Date.new(2022, 7, 24), end_date: Date.new(2022, 7, 30), total: 3001, watch: watch6, renter: user7, status: 'confirmed', cleaning_service: false, delivery: false, completed: true)
+booking7 = Booking.create(start_date: Date.new(2022, 7, 25), end_date: Date.new(2022, 7, 31), total: 8000, watch: watch7, renter: user6, status: 'canceled', cleaning_service: false, delivery: true, completed: false)
+booking8 = Booking.create(start_date: Date.new(2022, 7, 28), end_date: Date.new(2022, 7, 31), total: 8000, watch: watch8, renter: user1, status: 'canceled', cleaning_service: true, delivery: true, completed: false)
+booking9 = Booking.create(start_date: Date.new(2022, 7, 29), end_date: Date.new(2022, 8, 1), total: 1800, watch: watch1, renter: user7, status: 'pending', cleaning_service: true, delivery: true, completed: false)
+booking10 = Booking.create(start_date: Date.new(2022, 7, 31), end_date: Date.new(2022, 8, 1), total: 1000, watch: watch3, renter: user4, status: 'confirmed', cleaning_service: true, delivery: true, completed: true)
+booking11 = Booking.create(start_date: Date.new(2022, 7, 31), end_date: Date.new(2022, 9, 1), total: 3001, watch: watch6, renter: user9, status: 'confirmed', cleaning_service: false, delivery: false, completed: true)
+booking12 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch7, renter: user9, status: 'pending', cleaning_service: false, delivery: true, completed: false)
+booking13 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch8, renter: user1, status: 'pending', cleaning_service: true, delivery: true, completed: false)
+booking14 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch2, renter: user9, status: 'pending', cleaning_service: false, delivery: true, completed: false)
+booking15 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 10, 1), total: 8000, watch: watch4, renter: user1, status: 'confirmed', cleaning_service: true, delivery: true, completed: false)
 
 puts 'Creating Reviews ...'
 review1 = Review.create(rating: 5, comment: 'Nice nice!', booking: booking1)
-review1 = Review.create(rating: 4, comment: 'very nice watch! Nice owner too!', booking: booking3)
-review1 = Review.create(rating: 4, comment: 'Handsome watch. Did my wrist roll 100 times!', booking: booking2)
-review1 = Review.create(rating: 2, comment: 'Worst experience ever!', booking: booking4)
-review1 = Review.create(rating: 1, comment: 'Awful awful!', booking: booking6)
+review2 = Review.create(rating: 4, comment: 'very nice watch! Nice owner too!', booking: booking5)
+review3 = Review.create(rating: 4, comment: 'Handsome watch. Did my wrist roll 100 times!', booking: booking6)
+review4 = Review.create(rating: 2, comment: 'Worst experience ever!', booking: booking10)
+review5 = Review.create(rating: 1, comment: 'Awful awful!', booking: booking11)
 
 
 
+
+## ADD COMPLETION STATUS AS A BOOLEAN
 
 
 # ingredient = "chocolate"
