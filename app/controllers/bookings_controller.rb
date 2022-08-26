@@ -8,7 +8,6 @@ class BookingsController < ApplicationController
   end
 
   def create
-    # raise
     @watch = Watch.find(params[:watch_id])
     @booking = Booking.new(booking_params)
     @booking.renter = current_user
