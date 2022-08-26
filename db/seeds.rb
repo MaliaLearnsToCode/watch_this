@@ -131,8 +131,6 @@ watch8 = Watch.create!(
   end_date: Date.new(2022, 9, 27)
 )
 
-add_column :bookings, :meetup_location, :string
-add_column :bookings, :delivery_location, :string
 
 puts 'Creating Bookings ...'
 booking1 = Booking.create(start_date: Date.new(2022, 8, 31), end_date: Date.new(2022, 9, 1), total: 1500, watch: watch1, renter: user5, status: 'pending', cleaning_service: false, delivery: true)

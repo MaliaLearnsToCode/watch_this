@@ -15,13 +15,15 @@
 
 
 <div class="new-watch m-3">
-  <h1> <strong>Rent your watch</strong> !</h1>
+  <h2> <strong>Provide some information about the watch you want to rent out.</strong></h2>
   <%= simple_form_for [ @user, @watch ] do |f| %>
     <%= f.input :brand %>
     <%= f.input :model %>
     <%= f.input :year %>
     <%= f.input :price %>
-    <%= f.input :photo, as: :file %>
-    <%= f.submit "Submit", class: "btn btn-success" %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+    <%= f.submit "Submit", class: "btn btn-success bg-opacity-25" %>
   <% end %>
 </div>
