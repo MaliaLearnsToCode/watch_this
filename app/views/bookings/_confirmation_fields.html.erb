@@ -5,45 +5,46 @@
     <div class="container d-flex"><!-- main div -->
       <div class="flex-grow-1"> <!--left div-->
         <div class="d-flex">
-          <div class="d-flex"><!-- Div B1a -->
-            <div class="p-2"><%= image_tag "urban1.jpg.webp", alt: "Watch", width: 200 %></div>
-            <div class="p-2"><%= image_tag "urban2.jpg.webp", alt: "Watch", width: 200 %></div>
+          <div class="d-flex gap-2 pb-2"><!-- Div B1a -->
+            <div class=""><%= image_tag "urban1.jpg.webp", alt: "Watch", width: 200 %></div>
+            <div class=""><%= image_tag "urban2.jpg.webp", alt: "Watch", width: 200 %></div>
           </div>
         </div>
-        <div class="d-flex justify-content-between form-check form-check-inline text-white bg-dark"><!-- Div B1b -->
-          <div>
+        <div class="d-flex justify-content-between form-check form-check-inline background-color=F5EBE0 me-4 px-4 py-2 rounded" id="F5EBE0_colour"><!-- Div B1b -->
+          <div class="text-black">
             <p><%= watch.brand %></p>
             <p><%= watch.model %></p>
           </div>
           <div>
-            <p><%= watch.start_date %></p><p>to</p><p><%= watch.end_date %></p>
+            <p><%= watch.start_date.strftime('%d %b')%> to <%= watch.end_date.strftime('%d %b')%></p>
+            <h4>$<%= watch.price %></h4>
           </div>
-        <div>
-          <div>
-            <%= simple_form_for [watch, booking] do |f| %>
-            <div>
-              <%= f.input :cleaning_service %>
-              <%= f.input :delivery %>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="flex-column text-white bg-secondary"> <!--right div-->
-        <div class="d-flex align-items-stretch">
-          <p class="pe-3"><%= user.first_name %> <%= user.last_name %></p>
-          <div><%= image_tag "urban1.jpg.webp", alt: "Watch", width: 50 %></div>
-        </div>
-        <div class="d-flex justify-content-aruond">
         </div>
 
-        <div class="mt-6">
-          <h2 style="text-align:center">Reward Points</h2>
+        <%= simple_form_for [watch, booking] do |f| %>
+        <div id="">
+          <div class="d-flex justify-content-between text-black  px-4 py-2 my-2 rounded me-4" id="F5EBE0_colour">
+            <%= f.input :cleaning_service %>
+            <p class="text-right">$<%= watch.cleaning_price %></p>
+          </div>
+          <div class="d-flex justify-content-between text-black px-4 py-2 rounded me-4" id="F5EBE0_colour">
+            <%= f.input :delivery %>
+            <p>$<%= watch.delivery_price %></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-around text-black"> <!--right div-->
+        <div class="d-flex align-items-end" id="F5EBE0_colour"><!--Profile div-->
+          <p class="pe-3"><%= user.first_name %> <%= user.last_name %></p>
+          <div><img src ="https://cdn-icons-png.flaticon.com/512/7622/7622626.png" width="50" height="50"></div>
+        </div>
+        <div class="px-4 px-2" id="F5EBE0_colour"><!--Reward Points div-->
+          <h4 style="text-align:center">Reward Points</h4>
           <p style="text-align:center">Your Points <strong><%= user.points %></strong></p>
           <p style="text-align:center">New Points <strong>200</strong></p>
         </div>
-
-        <div class="mt-6">
+        <div class="text-center" id="F5EBE0_colour"><!--Total price div-->
           <h3>Total</h3>
           <h3>$48,210</h2>
         </div>
@@ -58,7 +59,7 @@
       <input type="text" class="form-control" id="exampleInputName" placeholder="Your name" required>
       <div class="invalid-feedback">Name can't be blank</div>
       <div class="valid-feedback">Looks good!</div>
-      <div class="form-text">Text input example</div>
+      <div class="form-text"></div>
     <div class="mb-3 width: 50%"><!-- Div C2 -->
     <label class="form-label">Expiry Date</label>
     <div class="d-flex flex-row justify-content-between align-items-center">
@@ -101,8 +102,8 @@
       <div class="invalid-feedback">Number can't be blank</div>
       <div class="valid-feedback">Looks good!</div>
       <div class="form-text"></div>
-      <%= f.submit "Confirm!", class:"text-center btn btn-primary" %>
 
+      <div class="center" style="align-items: center"><%= f.submit "Confirm!", class:"text-center btn btn-primary" %></div>
     </div>
   </div>
   <% end %>

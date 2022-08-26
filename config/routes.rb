@@ -3,10 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
 
-  root "watches#index"
-  # resources :bookings
-  # resources :watches
-  # resources :users
+
+  # root to: 'watches#index'
 
   resources :users do
     resources :watches, only: %i[new create show destroy edit update]

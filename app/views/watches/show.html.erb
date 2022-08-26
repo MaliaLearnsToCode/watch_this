@@ -1,51 +1,58 @@
 <div class="container">
   <div class="signature">
       <hr>
-      <h2><%= "Is this #{@watch.model} the watch you've been dreaming of?" %></h2>
+      <h2> Is this <strong><%= @watch.model %></strong> the watch you've been dreaming of? </h2>
       <hr>
   </div>
 
   <div class="container-image mb-5">
     <div id="single-watch-photo" class="row">
-      <div class = 'col-4'>
-      <%= image_tag("img_1.jpg", height: '280', width: '280') %>
+      <div class = 'd-flex col-4 justify-content-start'>
+      <%= image_tag("img_2.jpg", width: '280', height: '280') %>
       </div>
-      <div class = 'col-4'>
-        <%= image_tag("img_2.jpg", height: '280', width: '280') %>
+      <div class = 'd-flex col-4 justify-content-center'>
+        <%= image_tag("img_1.jpg", width: '280', height: '280') %>
       </div>
-      <div class = 'col-4'>
-        <%= image_tag("img_1.jpg", height: '280', width: '280') %>
+      <div class = 'd-flex col-4 justify-content-end'>
+        <%= image_tag("img_1.jpg", width: '280', height: '280') %>
       </div>
     </div>
+  </div>
+
+  <div class="container-image mb-5">
+    <div id="single-watch-photo" class="row">
+      <% @watch.photos.each do |photo| %>
+      <div class = 'd-flex col-4 justify-content-center'>
+        <%= cl_image_tag photo.key, height: 280, width: 280 %>
+      </div>
+      <% end %>
+      </div>
   </div>
 
   <div class="d-flex justify-content-between mt-5">
     <div class="card-info border-0 mr-5 ml-0" style="width: 24rem; height: 16rem;">
       <div class="card-body">
         <h3 class="card-title" style="color:#9CA89C"><%= @watch.model %></h3>
-        <h6 class="card-subtitle mb-2 text-muted"><strong>Brand: </strong><%= @watch.brand %></h6>
+        <h6 class="card-subtitle mb-2"><strong>Brand: </strong><%= @watch.brand %></h6>
         <p class="card-text"><strong>Model: </strong><%= @watch.model  %></p>
         <p class="card-text"><strong>Year: </strong><%= @watch.year  %></p>
+        <p class="card-text"><strong>Availability: </strong><%= "#{@watch.end_date}  - #{@watch.start_date}" %></p>
         <p class="card-text"><strong>Price per day: </strong><%= @watch.price %></p>
       </div>
     </div>
 
-    <div class="card-reserve" style="width: 18rem; height: 24rem; margin: 0 60px 0 0; ">
+    <div class="card-reserve" style="width: 18rem; height: 24rem; margin: 0 0 0 0; ">
       <div class="card-body" style="background-color:#9CA89C;">
         <% @bookings.each do |booking| %>
-        <h5 class="card-title"><%= "Total: #{booking.watch.price}" %></h5>
-        <p class="card-text"><% days = booking.end_date - booking.start_date %><%= "#{days} Days" %></p>
-        <p class="card-text"><%= "Start Date: #{booking.start_date}" %></p>
-        <p class="card-text"><%= "End Date: #{booking.end_date}" %></p>
+        <p class="card-text"><%= "Reserved dates: #{booking.start_date}  -  #{booking.end_date}" %></p>
+        <p class="card-text"><% days = (booking.end_date - booking.start_date).to_i %><%= "#{days} Day(s)" %></p>
+        <h5 class="card-title"><%= "Total: $ #{booking.watch.price * days}" %></h5>
+        <div class="card-body" style="margin:0 0 0 0;">
+          <button link_to new_watch_booking_path(@watch), class="btn btn-outline-success bg-opacity-35 my-2 my-sm-0" type="submit">RESERVE THIS WATCH</button>
+        </div>
         <% end %>
-      </div>
-      <div class="card-body" style="margin:0 0 0 188px;">
-        <button link_to new_watch_booking_path(@watch), class="btn btn-outline-secondary my-2 my-sm-0" type="submit">RESERVE</button>
       </div>
     </div>
   </div>
 
-  <div style="margin: 0 0 50px 0;">
-  <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
-  </div>
 </div>
