@@ -17,15 +17,15 @@ class BookingsController < ApplicationController
     @booking.total = @watch.price
     @booking.start_date = @watch.start_date
     @booking.end_date = @watch.end_date
+    authorize @booking
 
     if @booking.save
       redirect_to success_booking_path(@booking)
     else
       render :new, status: :unprocessable_entity
     end
-      authorize @booking
   end
-  
+
    def success
     @watch = @booking.watch
     @success = @booking.watch
@@ -35,11 +35,11 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:total)
+    params.require(:booking).permit(:delivery, :cleaning_service)
   end
 
   def set_booking
     @booking = Booking.find(params[:id])
   end
-  
+
 end
