@@ -22,10 +22,11 @@
       </div>
       <p><u>Dates:</u></p>
       <p>
-        <strong><%= booking.watch.start_date%> to <%= booking.watch.end_date%></strong>
+        <strong><%= booking.start_date%> to <%= booking.end_date%></strong>
       </p>
 
       <%= link_to "see details", watch_path, class: "btn btn-outline-secondary mx-4" %>
+      <%= link_to "Cancel booking", user_path, class: "btn btn-outline-secondary mx-4" %>
 
       </div>
   </div>

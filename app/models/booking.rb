@@ -7,9 +7,20 @@ class Booking < ApplicationRecord
   validates :total, presence: true
   validates :status, presence: true
 
+  # scope :with_status, ->(booking_status, current_user) do
+  #   where('watches.end_date' < Date.today).where(status: booking_status).joins(:watch).where('watches.user': current_user)
+  # end
+
   scope :with_status, ->(booking_status, current_user) do
     where(status: booking_status).joins(:watch).where('watches.user': current_user)
   end
+
+  scope :completed_bookings, -> (current_user) do
+    where(completed: true).joins(:watch).where('watches.user': current_user)
+  end
+
+
+
 
   geocoded_by :meetup_location
   geocoded_by :delivery_location
@@ -27,6 +38,8 @@ class Booking < ApplicationRecord
     total += delivery? ? watch.delivery_price : 0
     total
   end
+
+
 
   # def available
   #   # get end date.to_i
