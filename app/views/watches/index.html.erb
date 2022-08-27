@@ -1,18 +1,26 @@
-<h1>Watches</h1>
-<%= link_to "Rent out your watch", new_watch_path, class: "btn btn-outline-secondary mx-4" %>
+
+  <div class="container">
+    <div class="box">
+      <h3>DI am John Doe</h3>
+    </div>
+  </div>
+
+
 <div class="container">
-
-<form action="/watches">
-  <label for="start_date">Start date:</label><br>
-  <input type="date" id="start_date" name="start_date"><br>
-  <label for="end_date">End date:</label><br>
-  <input type="date" id="end_date" name="end_date" ><br><br>
-  <input type="submit" value="Submit">
-</form>
-
-  <div class="row">
-    <% @watches.each do |watch| %>
-      <%= render watch, watch: watch %>
-    <% end %>
+  <div>
+  <h1>Watches</h1>
+  <%= link_to "Rent out your watch", new_watch_path, class: "btn btn-outline-secondary mx-4" %>
+    <form action="/watches">
+      <label for="start_date">Start date:</label><br>
+      <input type="date" id="start_date" name="start_date"><br>
+      <label for="end_date">End date:</label><br>
+      <input type="date" id="end_date" name="end_date" ><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <div class="row">
+      <% @watches.each do |watch| %>
+        <%= render watch, watch: watch %>
+      <% end %>
+    </div>
   </div>
 </div>
