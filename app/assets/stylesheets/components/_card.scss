@@ -4,20 +4,15 @@
 }
 
 .card img {
-
-    object-fit: contain;
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 50%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // height: 300px;
+    // width: 200px;
+    // object-fit: contain;
+    // background-color: white;
 }
 
 .card-img {
   padding: 12px;
-  border-radius: 8px;
+
 }
 
 .card .card-infos {
@@ -25,9 +20,7 @@
   background: #EFE5D9;
   justify-content: space-between;
   position: relative;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

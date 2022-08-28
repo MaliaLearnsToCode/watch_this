@@ -1,7 +1,7 @@
 .card-product {
   overflow: hidden;
   height: 120px;
-  background: white;
+  background: #F5EBE0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -29,4 +29,29 @@
 
 .card-product .card-product-infos {
   padding: 16px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 5px 10px;
+}
+
+.button1 {
+  background-color: white;
+  color: #80818B;
+  border: 2px solid #80818B;
+}
+
+.button1:hover {
+  background-color: #9CA89C;
+  color: #F5EBE0;
 }
