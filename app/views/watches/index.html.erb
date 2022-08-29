@@ -1,19 +1,36 @@
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+
 
 <h1 style="margin:10px 10px 5px 20px;">Watches</h1>
 <div class="btn btn-success btn-xs" id="index-button">
-<%= link_to "Add new booking", new_watch_path, :class => "btn" %>
+  <%= link_to "Add new booking", new_watch_path, :class => "btn" %>
 </div>
-<h1>Watches</h1>
+<hr>
 <%= link_to "Rent out your watch", new_watch_path, class: "btn btn-outline-secondary mx-4" %>
-<div class="container">
 
-<form action="/watches">
-  <label for="start_date">Start date:</label><br>
-  <input type="date" id="start_date" name="start_date"><br>
-  <label for="end_date">End date:</label><br>
-  <input type="date" id="end_date" name="end_date" ><br><br>
-  <input type="submit" value="Submit">
-</form>
+<div class="container" data-controller="watch-tabs">
+
+  <form action="/watches" class="form-inline">
+    <label for="start_date">Start date:</label><br>
+    <input type="date" id="start_date" name="start_date"><br>
+    <label for="end_date">End date:</label><br>
+    <input type="date" id="end_date" name="end_date"><br><br>
+    <input type="submit" value="Submit" id="submitbutton">
+  </form>
+
+  <div class="text-center category">
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="all">All</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Patek Philippe">Patek Philippe</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Lange & Söhne">Lange & Söhne</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Audemars Piguet">Audemars Piguet</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Rolex">Rolex</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Richard Mille">Richard Mille</button>
+    <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Cartier">Cartier</button>
+  </div>
 
   <div class="row">
     <% @watches.each do |watch| %>

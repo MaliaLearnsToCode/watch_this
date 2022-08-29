@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import WatchTabsController from "./watch_tabs_controller"
+application.register("watch-tabs", WatchTabsController)
