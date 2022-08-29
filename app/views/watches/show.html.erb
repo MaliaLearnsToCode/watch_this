@@ -5,19 +5,7 @@
       <hr>
   </div>
 
-  <div class="container-image mb-5">
-    <div id="single-watch-photo" class="row">
-      <div class = 'd-flex col-4 justify-content-start'>
-      <%= image_tag("img_2.jpg", width: '280', height: '280') %>
-      </div>
-      <div class = 'd-flex col-4 justify-content-center'>
-        <%= image_tag("img_1.jpg", width: '280', height: '280') %>
-      </div>
-      <div class = 'd-flex col-4 justify-content-end'>
-        <%= image_tag("img_1.jpg", width: '280', height: '280') %>
-      </div>
-    </div>
-  </div>
+
 
   <div class="container-image mb-5">
     <div id="single-watch-photo" class="row">
@@ -28,6 +16,9 @@
       <% end %>
       </div>
   </div>
+
+
+
 
   <div class="d-flex justify-content-between mt-5">
     <div class="card-info border-0 mr-5 ml-0" style="width: 24rem; height: 16rem;">
@@ -40,16 +31,15 @@
       </div>
     </div>
 
-    <div class="card-reserve" style="width: 18rem; height: 24rem; margin: 0 0 0 0; ">
+    <div class="card-reserve" style="width: 18rem; height: 24rem; margin: 0 0 0 0;">
       <div class="card-body" style="background-color:#9CA89C;">
-        <% @bookings.each do |booking| %>
-        <p class="card-text"><%= "Reserved dates: #{booking.start_date}  -  #{booking.end_date}" %></p>
-        <p class="card-text"><% days = (booking.end_date - booking.start_date).to_i %><%= "#{days} Day(s)" %></p>
-        <h5 class="card-title"><%= "Total: $ #{booking.watch.price * days}" %></h5>
+        <p class="card-text">
+        <%= "Reserved dates: #{@start_date}  -  #{@end_date}" %></p>
+        <p class="card-text"><%= "#{@days.to_i} Day(s)" %></p>
+        <h5 class="card-title"><%= "Total: $ #{@watch.price * @days.to_i}" %></h5>
         <div class="card-body" style="margin:0 0 0 0;">
-          <div class="btn btn-outline-success bg-opacity-35 my-2 my-sm-0"><%= link_to "RESERVE THIS WATCH", new_watch_booking_path(@watch)%></div>
+          <div class="btn btn-outline-success bg-opacity-35 my-2 my-sm-0"><%= link_to "RESERVE THIS WATCH", new_watch_booking_path(@watch, days: @days.to_i, start_date: @start_date, end_date: @end_date)%></div>
         </div>
-        <% end %>
       </div>
     </div>
   </div>

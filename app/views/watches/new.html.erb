@@ -2,7 +2,6 @@
   <nav role="tablist" class="grid-x align-justify align-middle">
     <hr>
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">WATCH THIS</a>
         <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
         <div class="collapse navbar-collapse">
           <div class="ms-auto flex">
@@ -21,7 +20,11 @@
     <%= f.input :model %>
     <%= f.input :year %>
     <%= f.input :price %>
-    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-    <%= f.submit "Submit", class: "btn btn-success bg-opacity-25" %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <br>
+    <br>
+    <%= f.input :photos, as: :file, input_html: { multiple: true }%>
+    <%= f.submit "Submit", class: "btn btn-success btn-opacity-25" %>
   <% end %>
 </div>
