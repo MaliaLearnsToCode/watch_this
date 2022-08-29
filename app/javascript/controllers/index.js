@@ -16,5 +16,8 @@ application.register("geocoder", GeocoderController)
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
+import WatchTabsController from "./watch_tabs_controller"
+application.register("watch-tabs", WatchTabsController)
+
 import MapController from "./map_controller"
 application.register("map", MapController)

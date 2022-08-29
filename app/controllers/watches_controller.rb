@@ -3,6 +3,7 @@ class WatchesController < ApplicationController
   before_action :set_watch, only: %i[show edit update destroy]
 
   def index
+
     @start_date = ""
     @end_date = ""
 
@@ -15,10 +16,12 @@ class WatchesController < ApplicationController
 
       @watches = Watch.overlapping(start_date, end_date)
       @watches = policy_scope(Watch.overlapping(start_date, end_date))
+
     else
       @watches = Watch.all
       @watches = policy_scope(Watch)
     end
+
   end
 
   def show
