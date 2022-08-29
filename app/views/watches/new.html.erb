@@ -41,15 +41,16 @@
       </div>
     </div>
   </div>
-  <div class="new-watch m-3">
-    <h2> <strong>List your watch</strong></h2>
+  <div class="right-side m-3"><br>
+  <div class="list-watch">
+    <h2><strong>List your watch</strong></h2></div>
     <%= simple_form_for [ @user, @watch ] do |f| %>
       <%= f.input :brand %>
       <%= f.input :model %>
       <%= f.input :year %>
       <%= f.input :price %>
       <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-      <%= f.submit "Submit", class: "btn btn-success bg-opacity-25" %>
+      <center><%= f.submit "Submit", class: "button button1" %></center>
     <% end %>
   </div>
 </div>
