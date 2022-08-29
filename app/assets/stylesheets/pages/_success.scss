@@ -4,7 +4,7 @@
   background: #F5EBE0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .card-product img {
@@ -55,4 +55,8 @@
 .button1:hover {
   background-color: #9CA89C;
   color: #F5EBE0;
+}
+
+.overarching {
+  padding-right: 96px;
 }

@@ -1,5 +1,5 @@
 <hr>
-<h2 class="d-flex justify-content-center"><%= "The gorgeous #{@watch.model} will soon be at your doorstep!" %></h2>
+<h2 class="d-flex justify-content-center"><%= "The gorgeous #{@watch.model} will be at your doorstep!" %></h2>
 <hr>
 
 <div>
@@ -8,22 +8,33 @@
     <p class="border rounded-pill bg-dark bg-opacity-25 p-3 m-1" style="text-color: grey;">Confirmation Details</p>
     <p class="border rounded-pill bg-success bg-opacity-25 p-3 m-1">Booking Confirmed!</p>
   </div>
-
-  <div class="success-sequence">
-    <div class="d-flex justify-content-center">
-      <i class="fa-solid fa-circle-check fa-10x"></i>
+<div>
+<div class="d-flex justify-content-center">
+  <div class="overarching">
+    <div class="card" style="width: 18rem;">
+      <center><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/lupuorrc.json"
+          trigger="hover"
+          colors="primary:#80818b,secondary:#eeaa66"
+          style="width:200px;height:200px">
+      </lord-icon></center>
+      <div class="card-body">
+      <h3>Congratulations! Your booking is successful!</h3>
+        <p class="card-text">Listing a watch allows you to connect with fellow watch enthusiasts and grow the community!</p>
+      <p><%= " Booking reference: #{@booking.id}"  %></p>
+      </div>
     </div>
-    <div class="d-flex justify-content-center mt-5"><h3>Congratulations! Your booking is successful!</h3></div>
-    <div class="d-flex justify-content-center mt-5"><p><%= " Booking reference: #{@booking.id}"  %></p></div>
   </div>
-
-  <div class="d-flex justify-content-center mt-3">
-    <div class="card-booking-success d-inline-flex justify-content-right">
-    <div class="flex-fill" style="width: 80%;"> <%= image_tag("img_2.jpg", height: '280', width: '280') %></div>
-      <div class="flex-fill p-3" style="height: 80% weight: 24rem; background-color:#F5EBE0;">
+  <div class="d-flex flex-column">
+  <div class="top date">
+        <p style="font-size: small"><%= "Booking date: #{@booking.start_date.strftime('%d %b')} - #{@booking.end_date.strftime('%d %b')}" %></p>
+  <div class="d-flex ">
+    <div class="card-booking-success d-flex align-items-center">
+    <div class=""> <%= image_tag("img_2.jpg", height: '280', width: '280') %></div>
+      <div class="p-3" style="weight: 24rem; background-color:#F5EBE0;">
         <h3><%= @watch.model %></h3>
         <p><%= @watch.brand %></p>
-        <p style="font-size: small"><%= "Booking date: #{@booking.start_date.strftime('%d %b')} - #{@booking.end_date.strftime('%d %b')}" %></p>
         <p><%= "Price/day: $ #{@watch.price}" %></p>
         <p><%= "Cleaning Service: #{@booking.cleaning_service ? "Yes" : "No"}" %></p>
         <p><%= "Delivery: $ #{@watch.delivery_price}.00" %></p>
@@ -31,9 +42,12 @@
         <p><%= "Total: $ #{@booking.total_price}" %></p>
         </div>
       </div>
+      </div>
+      </div>
     </div>
-    <div><%= link_to user_path %>
-    <button class="button button1" >My bookings</button>
+    </div>
+    <div><center><%= link_to user_path %>
+    <button class="button button1" >My bookings</button></center>
     </div>
   </div>
   </div>
