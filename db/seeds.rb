@@ -56,7 +56,8 @@ delivery_price: 60,)
 watch1.photos.attach(io: file, filename: "nautilus.jpg", content_type: "image/jpg")
 watch1.save
 
-watch2 = Watch.create!(
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661762377/lyvysf3gftiy3ieqimlz.png")
+watch2 = Watch.new(
   start_date: Date.new(2022, 7, 10),
   end_date: Date.new(2022, 10, 15),
   availability: true,
@@ -68,25 +69,30 @@ watch2 = Watch.create!(
   avg_rating: 4.6,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch2.photos.attach(io: file, filename: "lange1.jpg", content_type: "image/jpg")
+watch2.save
 
-watch3 = Watch.create!(
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661762396/my3edqcqxr5zcur7nbla.jpg")
+watch3 = Watch.new(
   start_date: Date.new(2022, 6, 20),
   end_date: Date.new(2022, 10, 26),
   availability: true,
   brand: 'Audemars Piguet',
-  model: 'Code 1165',
+  model: 'Code 1159',
   year: 2019,
   price: 290.00,
   user: user3,
   avg_rating: 3.2,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch3.photos.attach(io: file, filename: "code1159.jpg", content_type: "image/jpg")
+watch3.save
 
-watch4 = Watch.create!(
+
+file = URI.open('https://res.cloudinary.com/dyiaygjfa/image/upload/v1661754858/anwvosyowt4rpcmjvmm0.jpg')
+watch4 = Watch.new(
   start_date: Date.new(2022, 7, 20),
   end_date: Date.new(2022, 11, 25),
   availability: true,
@@ -100,8 +106,11 @@ watch4 = Watch.create!(
   delivery_price: 60,
 
 )
+watch4.photos.attach(io: file, filename: "daytona.jpg", content_type: "image/jpg")
+watch4.save
 
-watch5 = Watch.create!(
+file = URI.open('https://res.cloudinary.com/dyiaygjfa/image/upload/v1661753027/qtv0fzgbpumbzaypoxhv.jpg')
+watch5 = Watch.new(
   start_date: Date.new(2022, 8, 1),
   end_date: Date.new(2022, 11, 25),
   availability: true,
@@ -112,10 +121,12 @@ watch5 = Watch.create!(
   user: user4,
   avg_rating: 4.2,
   cleaning_price: 150,
-
 )
+watch5.photos.attach(io: file, filename: "openwork.jpg", content_type: "image/jpg")
+watch5.save
 
-watch6 = Watch.create!(
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661762396/my3edqcqxr5zcur7nbla.jpg")
+watch6 = Watch.new(
   start_date: Date.new(2022, 8, 20),
   end_date: Date.new(2022, 10, 31),
   availability: false,
@@ -125,27 +136,33 @@ watch6 = Watch.create!(
   price: 799.99,
   user: user4,
   avg_rating: 4.1,
-  cleaning_price: 150,
-  delivery_price: 60,
+  cleaning_price: 150,  delivery_price: 60,
 
 )
+watch6.photos.attach(io: file, filename: "aquanaut11.jpg", content_type: "image/jpg")
+watch6.save
 
-watch7 = Watch.create!(
+
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661754825/i1bnvya1n6uc0aa5dhxw.jpg")
+watch7 = Watch.new(
   start_date: Date.new(2022, 6, 20),
   end_date: Date.new(2022, 10, 22),
   availability: true,
   brand: 'Richard Mille',
-  model: 'RM1',
+  model: 'RM11',
   year: 2000,
   price: 1200.00,
   user: user1,
   avg_rating: 4.3,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch7.photos.attach(io: file, filename: "rm11.jpg", content_type: "image/jpg")
+watch7.save
 
-watch8 = Watch.create!(
+
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661754836/ielzmxdb08p8t19cqg95.jpg")
+watch8 = Watch.new(
   start_date: Date.new(2022, 7, 20),
   end_date: Date.new(2022, 11, 18),
   availability: true,
@@ -157,10 +174,13 @@ watch8 = Watch.create!(
   avg_rating: 4.6,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch8.photos.attach(io: file, filename: "crash.jpg", content_type: "image/jpg")
+watch8.save
 
-watch9 = Watch.create!(
+
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661753027/qtv0fzgbpumbzaypoxhv.jpg")
+watch9 = Watch.new(
   start_date: Date.new(2022, 8, 20),
   end_date: Date.new(2022, 9, 25),
   availability: true,
@@ -172,8 +192,9 @@ watch9 = Watch.create!(
   avg_rating: 4.6,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch9.photos.attach(io: file, filename: "offshore.jpg", content_type: "image/jpg")
+watch9.save
 
 puts 'Creating Bookings ...'
 booking1 = Booking.create(start_date: Date.new(2022, 7, 20), end_date: Date.new(2022, 7, 25), total: 1500, watch: watch1, renter: user5, status: 'confirmed', cleaning_service: false, delivery: true, completed: true, meetup_location: "Higher Performace, Singapore")
