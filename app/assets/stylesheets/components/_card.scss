@@ -11,9 +11,10 @@
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 180px;
     width:100%;
-    border-radius: 8px;
 }
 
 .card-img {
@@ -40,6 +41,6 @@
   background: #efe5d9;
   justify-content: space-between;
   position: relative;
-
   border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
