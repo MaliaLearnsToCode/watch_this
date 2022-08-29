@@ -23,12 +23,13 @@
       <div class="flex-fill" style="height: 80% weight: 24rem;">
         <h3><%= @watch.model %></h3>
         <p><%= @watch.brand %></p>
+        <p><%= "Delivery to: #{@booking.delivery_location}" %></p>
         <p style="font-size: small"><%= "Booking date: #{@booking.start_date} - #{@booking.end_date}" %></p>
         <p><%= "Price/day: $ #{@watch.price}" %></p>
-        <p><%= "Cleaning Service: #{@booking.cleaning_service ? "Yes" : "No"}" %></p>
-        <p><%= "Delivery: $ #{@watch.delivery_price}.00" %></p>
+        <p><%= "Cleaning Service: #{@booking.cleaning_service ? @watch.cleaning_price.to_f : "No"}" %></p>
+        <p><%= "Delivery: #{@booking.delivery ? @watch.delivery_price.to_f : "No"}" %></p>
         <hr>
-        <p><%= "Total: $ #{@booking.total_price}" %></p>
+        <p><%= "Total: $ #{@booking.total}" %></p>
         </div>
       </div>
     </div>

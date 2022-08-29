@@ -1,28 +1,38 @@
-<div class="col-4">
-  <div class="card" style="background-color:#9CA89C;">
-    <div class="card-img"><%= image_tag "watch.jpg", alt: "Watch", width: 200 %></div>
-    <div class="card-infos">
-      <div>
-        <div class="d-flex justify-content-between">
-          <div>
-            <p><strong><%= watch.brand %></strong></p>
-            <p><%= watch.model %></p>
 
-          </div>
-          <div>
-          <span class="fa fa-star"></span>
-          5
+
+  <% @watches.each do |watch| %>
+  <div class="col-4 filter" data-brand="<%= watch.brand %>" data-watch-tabs-target="watch">
+    <div class="card p-3" style="background-color:#9CA89C;">
+      <div class="detail boader border-success mb-3">
+        <% if watch.photos.attached? %>
+          <div class="detail-img text-center w-100 rounded"><%= cl_image_tag watch.photos[0].key, crop: :fill %></div>
+        <% else %>
+
+        <% end %>
+      </div>
+      <div class="card-infos rounded">
+        <div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <p><strong><%= watch.brand %></strong></p>
+              <p><%= watch.model %></p>
+
+            </div>
+            <div>
+            <span class="fa fa-star"></span>
+            5
+            </div>
           </div>
         </div>
-      </div>
-      <div class="d-flex justify-content-between" style="background-color:#EFE5D9;">
-        <p><%= watch.year%></p>
-        <p><strong>$<%= watch.price %></strong></p>
+        <div class="d-flex justify-content-between" style="background-color:#EFE5D9;">
+          <p><%= watch.year%></p>
+          <p><strong>$<%= watch.price %></strong></p>
+
+        </div>
+
+      <%= link_to "see details", watch_path(watch, start_date: @start_date, end_date: @end_date ), class: "btn btn-outline-secondary mx-4" %>
 
       </div>
-
-      <%= link_to "see details", watch_path(watch), class: "btn btn-outline-secondary mx-4" %>
-
-      </div>
-  </div>
-</div>
+    </div>
+    </div>
+  <% end %>

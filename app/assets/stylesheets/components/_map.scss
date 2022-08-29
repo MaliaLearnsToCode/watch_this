@@ -1,0 +1,14 @@
+.geocoder {
+  z-index: 1;
+  width: 100%;
+  top: 10px;
+}
+
+.mapboxgl-ctrl-geocoder {
+  min-width: 100%;
+}
+
+#map {
+  height: 300px;
+  width: 1250px;
+}
