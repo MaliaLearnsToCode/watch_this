@@ -3,14 +3,38 @@ class WatchesController < ApplicationController
   before_action :set_watch, only: %i[show edit update destroy]
 
   def index
-    @watches = Watch.all
-    @watches = policy_scope(Watch)
+    @start_date = ""
+    @end_date = ""
+
+    if params[:start_date].present? && params[:end_date].present?
+      start_date = params[:start_date].to_date
+      end_date = params[:end_date].to_date
+
+      @start_date = start_date
+      @end_date = end_date
+
+      @watches = Watch.overlapping(start_date, end_date)
+      @watches = policy_scope(Watch.overlapping(start_date, end_date))
+    else
+      @watches = Watch.all
+      @watches = policy_scope(Watch)
+    end
   end
 
   def show
     authorize @watch
+    if params[:start_date].present? && params[:end_date].present?
+      start_date = params[:start_date].to_date
+      end_date = params[:end_date].to_date
+
+      @start_date = start_date
+      @end_date = end_date
+
+      @days = @end_date - @start_date
+    end
     @bookings = @watch.bookings
   end
+
 
   def new
     @watch = Watch.new
@@ -43,6 +67,12 @@ class WatchesController < ApplicationController
   end
 
   def watch_params
-    params.require(:watch).permit(:model, :user_id, :brand, :year, :price, photos: [])
+    params.require(:watch).permit(:model, :user_id, :brand, :year, :price, :start_date, :end_date, photos: [] )
   end
+
+
+end
+
+def article_params
+  params.require(:article).permit(:title, :body, :photo)
 end

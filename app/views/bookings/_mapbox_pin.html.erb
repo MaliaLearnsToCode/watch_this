@@ -1,0 +1,72 @@
+<div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+  <div class="mapboxpin">
+    <style>
+      #map { height: 300px; width: 1250px; }
+    </style>
+  </div>
+
+<div>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+
+<style>
+.geocoder {
+z-index: 1;
+width: 100%;
+top: 10px;
+}
+
+.mapboxgl-ctrl-geocoder {
+min-width: 100%;
+}
+
+#map {
+height: 300px;
+width: 1250px;
+}
+</style>
+
+<!-- This is where MapBox input field for address is AND where the actual Map is shown -->
+<hr>
+<div class="container pb-5">
+  <h4><strong>Please enter your delivery information: </strong></h4> <p><em> Streetname Streetnumber, City, Country </em></p>
+  <div id="geocoder" class="geocoder"></div>
+  <div id="map"></div>
+</div>
+
+
+
+<!-- This is the code where MapBox location PIN is happening -->
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFsaWFsZWFybnN0b2NvZGUiLCJhIjoiY2w2cTNjdm5mMHFrYjNidGVwM3dqbGJ1NCJ9.iurGsSbVYlqAaGnH73yKzA';
+  const map = new mapboxgl.Map({
+  container: 'map',
+  // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-79.4512, 43.6568],
+  zoom: 13
+  });
+
+  // Add the control to the map.
+  const geocoder = new MapboxGeocoder({
+  accessToken: mapboxgl.accessToken,
+  mapboxgl: mapboxgl
+  });
+
+  document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+</script>
+
+
+<!-- This is where the delivery location is parsed from the search input field from MapBox -->
+<script>
+  geocoder.on("result", (e) => {
+    e.preventDefault()
+    console.log(JSON.stringify(e.result.matching_place_name))
+    document.getElementsByName("booking[delivery_location]")[0].value = JSON.stringify(e.result.matching_place_name) ;
+  });
+</script>
