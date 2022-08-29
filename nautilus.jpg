@@ -1,0 +1,2141 @@
+
+<!DOCTYPE html>
+<html pageid="1111" pagekey="404" dir="ltr" lang="en" xml:lang="en" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    
+<script>
+    dataLayer = [{}];
+    dataLayer = [{
+'language': 'English',
+'pageCategory': 'Root',
+'pageSubCategory': '_',
+'page': '404-not-found'
+}];
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+    var countryLanguageAdot = {
+        'en-at': '<img src="https://60f02851c7a7700016853929.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f02851c7a7700016853929.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-pt': '<img src="https://60f0289ec7a770001685392a.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f0289ec7a770001685392a.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-gb': '<img src="https://60f029acc7a770001685392b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f029acc7a770001685392b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-us': '<img src="https://60f02a1ac7a770001685392d.tracker-us-east.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f02a1ac7a770001685392d.tracker-us-east.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-sg': '<img src="https://60f04dbac7a7700016853959.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04dbac7a7700016853959.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-hk': '<img src="https://60f04e03c7a770001685395a.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e03c7a770001685395a.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-th': '<img src="https://60f04eabc7a770001685395c.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04eabc7a770001685395c.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-tw': '<img src="https://60f04efcc7a770001685395d.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04efcc7a770001685395d.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'en-my': '<img src="https://60f04f9ac7a770001685395f.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04f9ac7a770001685395f.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'fr-fr': '<img src="https://60f026b2c7a7700016853925.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f026b2c7a7700016853925.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'fr-ch': '<img src="https://60f04c5cc7a7700016853955.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04c5cc7a7700016853955.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'de-ch': '<img src="https://60f04c5cc7a7700016853955.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04c5cc7a7700016853955.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'it-ch': '<img src="https://60f04c5cc7a7700016853955.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04c5cc7a7700016853955.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'de-de': '<img src="https://60f0274cc7a7700016853926.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f0274cc7a7700016853926.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'it-it': '<img src="https://60f0279dc7a7700016853927.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f0279dc7a7700016853927.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'es-es': '<img src="https://60f027eec7a7700016853928.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f027eec7a7700016853928.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'es-mx': '<img src="https://60f04f4bc7a770001685395e.tracker-us-east.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04f4bc7a770001685395e.tracker-us-east.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ja-jp': '<img src="https://60f04d74c7a7700016853958.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04d74c7a7700016853958.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'zh-cn': '<img src="https://60f04cafc7a7700016853956.tracker-asia.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04cafc7a7700016853956.tracker-asia.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+
+        'ar-om': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ar-ae': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ar-sa': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ar-qa': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ar-bh': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ar-kw': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />',
+        'ar-iq': '<img src="https://60f04e5bc7a770001685395b.tracker.adotmob.com/pixel/visite?d=5000&r=https%3A%2F%2F60f04e5bc7a770001685395b.tracker.adotmob.com%2Fpixel%2Fvisite5s" style="display:none" />'
+    }
+
+    var gtmLoaded = false;
+    function GTMCookieCheck() {
+        if (gtmLoaded == false && localStorage.CookiesAllowed == "true" && Patek.Cookies.get("settingDate") == "true") {
+
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W6ZKRNK');
+
+            var langAdot = $('html').attr('lang');
+            console.log(langAdot);
+            Patek.GeoLocation.get().then(function (infos) {
+                console.log(infos);
+                var country = infos.Country.Code;
+                var langAdot = $('html').attr('lang');
+                console.log(countryLanguageAdot[langAdot + "-" + country.toLowerCase()]);
+                $('#main_navigation').append(countryLanguageAdot[langAdot + "-" + country.toLowerCase()]);
+
+            });
+            gtmLoaded = true;
+        }
+    };
+
+    var GTMTimer = function () {
+        console.log("GMTtimer running");
+        if (gtmLoaded == false) {
+            try {
+                $(document).ready(function () {
+                    //$('#cookies_disclaimer a').attr('onclick', 'Patek.Cookies.allow();');
+                    GTMCookieCheck();
+
+                });
+                
+            } catch (e) {
+                console.log(e);
+            }
+        } else {
+            stopCookieInterval();
+        }
+    }
+
+    var cookieInterval = setInterval(GTMTimer, 100);
+    var stopCookieInterval = function () {
+        clearInterval(cookieInterval);
+    }
+</script>
+<!-- End Google Tag Manager -->
+<!-- Organization Schema -->
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.patek.com/en/404-not-found",
+    "name": "Patek Philippe | 404 Not Found",
+    "about": "Patek Philippe | 404 Not Found",
+    "description": "Official Website of Swiss master watchmaker. Review our collections and experience the Patek universe: History, Publications, Models…",
+    "keywords": "Patek Philippe, Patek",
+    "author": "PATEK PHILIPPE SA GENEVE",
+    "copyrightHolder": "PATEK PHILIPPE SA GENEVE"
+    }
+</script>
+<!-- End Organization Schema -->
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="PATEK PHILIPPE SA GENEVE" />
+<meta name="copyright" content="PATEK PHILIPPE SA GENEVE" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="robots" content="noindex" />
+<meta name="title" content="Patek Philippe | 404 Not Found" />
+<meta name="description" content="Official Website of Swiss master watchmaker. Review our collections and experience the Patek universe: History, Publications, Models…" />
+        <meta name="keywords" content="Patek Philippe, Patek" />
+
+<meta name="HandheldFriendly" content="true" />
+<link rel="dns-prefetch" href="https://www.patek.com//static.patek.com" />
+
+<script>
+    //delayed loading for datagathering
+    var cookieChecking = setInterval(function () {
+    }, 100);
+</script>
+<link rel="dns-prefetch" href="https://www.patek.com//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="https://www.patek.com//www.google-analytics.com" />
+<link rel="dns-prefetch" href="https://www.patek.com//t.contentsquare.net" />
+<link rel="dns-prefetch" href="https://www.patek.com//c.contentsquare.net" />
+    
+<meta property="og:site_name" content="Patek Philippe SA" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Patek Philippe | 404 Not Found" />
+<meta property="og:description" content="Official Website of Swiss master watchmaker. Review our collections and experience the Patek universe: History, Publications, Models…" />
+<meta property="og:image" content="https://www.patek.com/resources/img/404/thumbnail_og.jpg" />
+<meta property="og:url" content="https://www.patek.com/en/404-not-found" />
+<meta name="twitter:site" content="Patek Philippe SA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Patek Philippe | 404 Not Found" />
+<meta name="twitter:description" content="Official Website of Swiss master watchmaker. Review our collections and experience the Patek universe: History, Publications, Models…" />
+<meta name="twitter:image" content="https://www.patek.com/resources/img/404/thumbnail_twitter.jpg" />
+<meta name="twitter:url" content="https://www.patek.com/en/404-not-found" />
+<link rel="alternate" hreflang="en" href="https://www.patek.com/en/404-not-found" />
+<link rel="alternate" hreflang="fr" href="https://www.patek.com/fr/404-page-non-trouvee" />
+<link rel="alternate" hreflang="de" href="https://www.patek.com/de/404-nicht-gefunden" />
+<link rel="alternate" hreflang="zh" href="https://www.patek.com/chs/404-not-found" />
+<link rel="alternate" hreflang="es" href="https://www.patek.com/es/404-not-found" />
+<link rel="alternate" hreflang="it" href="https://www.patek.com/it/404-not-found" />
+<link rel="alternate" hreflang="ja" href="https://www.patek.com/ja/404-見つかりません" />
+<link rel="alternate" hreflang="ru" href="https://www.patek.com/ru/404-страница-не-найдена" />
+<link rel="alternate" hreflang="ar" href="https://www.patek.com/ar/404-غير-موجود" />
+<title>Patek Philippe | 404 Not Found</title>
+<link rel="apple-touch-icon-precomposed" href="https://www.patek.com/favicon_apple_touch.png" />
+<link rel="shortcut icon" type="image/x-icon" href="https://www.patek.com/favicon.ico" />
+    <link rel="canonical" href="https://www.patek.com/en/404-not-found" />
+    
+<link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/global/PatekGrid.min.v3.css" />
+<link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/global/Patekcom.min.v102.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/pages/home.min.v41.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/includes/highlights.min.v3.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/includes/productsHighlightsSlider.min.v3.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/includes/video-js.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/includes/videojs-resolution-switcher.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/includes/video-js-custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/lib/slick.min.v2.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/lib/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.patek.com/resources/css/pages/404.min.v6.css" />
+    
+<script src="https://www.patek.com/resources/js/lib/jquery.min.js"></script>
+<script src="https://www.patek.com/resources/js/lib/jquery.bez.min.js"></script>
+<script src="https://www.patek.com/resources/js/global/Patekcom.v33.js"></script>
+<script src="https://www.patek.com/resources/js/global/PatekForms.v11.js"></script>
+<script src="https://www.patek.com/resources/js/lib/picturefill.min.js"></script>
+<script src="https://www.patek.com/resources/js/lib/lazysizes.min.v4.js"></script>
+
+<script>
+    // Devices sizes
+    var deviceSizes = {
+        xsDevice: '500',
+        smDevice: '750',
+        mdDevice: '1000',
+        lgDevice: '1200',
+        xlgDevice: '1600'
+    };
+    
+</script>
+    <script src="https://www.patek.com/resources/js/pages/home.v11.js"></script>
+    <script src="https://www.patek.com/resources/js/lib/slick.min.js"></script>
+    <script src="https://www.patek.com/resources/js/includes/video.min.js"></script>
+    <script src="https://www.patek.com/resources/js/includes/videojs-resolution-switcher.js"></script>
+    <script src="https://www.patek.com/resources/js/includes/videojs-background-responsive.js"></script>
+    <script src="https://www.patek.com/resources/js/lib/jquery.visible.min.js"></script>
+</head>
+<script>
+    var locationVariables = window.location.href.toString();
+
+    if (locationVariables.indexOf('?saferpay=fail') > -1) {
+        $('body').css('opacity', '0');
+        console.log('adding iframelistener');
+        window.addEventListener('message', function (event) {
+            if (event.data.toString() != "saferpay_status") {
+                return
+            }
+            console.log('message received:  ' + event.data, event);
+            event.source.postMessage('{PageCode: "404"}', event.origin);
+        }, false);
+    }
+</script>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6ZKRNK" height="0" width="0" style="display:none;visibility:hidden" title="GTM"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+<div id="blurred_div"></div>
+
+<input type="checkbox" id="navigation_state" name="navigation_state" value="1" aria-hidden="true" />
+
+<input class="radio_nav hidden" type="radio" id="hidden_state" name="fullnav_state" value="0" aria-hidden="true" aria-label="Hidden state" />
+<input class="radio_nav hidden" type="checkbox" id="collection_state" name="fullnav_state" value="1" aria-hidden="true" aria-label="Collection state" />
+<input class="radio_nav hidden" type="checkbox" id="collection_state_mobile" name="fullnav_state" value="1" aria-hidden="true" aria-label="Collection state" />
+<input class="radio_nav hidden" type="checkbox" id="company_state" name="fullnav_state" value="2" aria-hidden="true" aria-label="Company state" />
+<input class="radio_nav hidden" type="checkbox" id="retailer_state" name="fullnav_state" value="3" aria-hidden="true" aria-label="Retailer state" />
+<input class="radio_nav hidden" type="checkbox" id="search_state" name="fullnav_state" value="4" aria-hidden="true" aria-label="Search state" />
+<input class="radio_nav hidden" type="checkbox" id="language_state" name="fullnav_state" value="5" aria-hidden="true" aria-label="Language state" />
+<input class="radio_nav hidden" type="checkbox" id="wishlist_state" name="fullnav_state" value="6" aria-hidden="true" aria-label="Wishlist state" />
+
+
+<nav id="main_navigation" class="main_navigation" role="navigation" dir="ltr">
+    <div class="navigation_content">
+        <ul class="nav_buttons white_nav">
+            <li class="burger_btn hidden_lg hidden_xlg">
+                <label for="navigation_state"></label>
+                <img src="https://www.patek.com/resources/svg/hamburger_beige.svg" alt="NAV" />
+            </li>
+            <li class="home_btn">
+                <a href="https://www.patek.com/en/home">
+                    <div style="position: absolute; top: 0; height: 100%; width: 100%;">
+                        <img class="patek_calatrava " src="https://www.patek.com/resources/svg/logo_patek_calatrava_beige.svg" alt="Patek Philippe" />
+                        <img class="patek_logo " src="https://www.patek.com/resources/svg/logo_patek_text_beige.svg" alt="Patek Philippe" />
+                    </div>
+                </a>
+            </li>
+            <li class="nav_watch_btn hidden_lg hidden_xlg">
+                <label for="collection_state_mobile" class="nav_label uppercase">
+                    <img src="https://www.patek.com/resources/svg/watch_1_brown.svg" alt="WATCHES" />
+                </label>
+            </li>
+        </ul>
+        <div class="navigation_hidden">
+            <ul class="nav_buttons brown_nav" role="tablist">
+                <li class="burger_btn" role="tab">
+                    <label class="collapse" for="navigation_state"></label>
+                    <div class="close_btn">
+                        <img src="https://www.patek.com/resources/svg/close_1_beige.svg" class="lazyload" alt="CLOSE" />
+                    </div>
+                </li>
+                <li class="search_btn" role="tab">
+                    <a href="https://www.patek.com/en/search">
+                        <img class="white" src="https://www.patek.com/resources/svg/nav_search.svg" alt="SEARCH" />
+                    </a>
+                </li>
+                <li class="burger_btn collection_state_mobile" role="tab">
+                    <label class="collapse" for="collection_state_mobile"></label>
+                    <div class="close_btn">
+                        <img src="https://www.patek.com/resources/svg/close_1_beige.svg" class="lazyload" alt="CLOSE" />
+                    </div>
+                </li>
+                <li class="home_btn">
+                    <a href="https://www.patek.com/en/home">
+                        <label>
+                            <img class="patek_calatrava" src="https://www.patek.com/resources/svg/logo_patek_calatrava_beige.svg" alt="Patek Philippe" />
+                            <img class="patek_logo " src="https://www.patek.com/resources/svg/logo_patek_text_beige.svg" alt="Patek Philippe" />
+                        </label>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav_content" id="main_navigation_content" role="tablist">
+                <li class="nav_element home_element " tabindex="0" role="tab">
+                    <a href="https://www.patek.com/en/home" class="nav_link">
+                        <div class="separator"></div>
+                        <div class="calatrava_logo">
+                            <img class="beige lazyload" src="https://www.patek.com/resources/svg/nav_calatrava_home_beige.svg" alt="NAV" />
+                            <img class="white lazyload" src="https://www.patek.com/resources/svg/nav_calatrava_home_white.svg" alt="NAV" />
+                        </div>
+                        <label for="home_checkbox" class="nav_label italic">Home</label>
+
+                        <div style="position: absolute; top: 0; height: 100%; width: 100%;">&nbsp;</div>
+
+                        <div class="border_bottom"></div>
+                    </a>
+                </li>
+                <li class="nav_element collection_nav_element " tabindex="0" role="tab">
+                    <div class="right_arrow">
+                        <img class="mobile_nav" src="https://www.patek.com/resources/svg/fleche_droite_white.svg" alt="RIGHT" />
+                    </div>
+                    <div class="separator"></div>
+                    <label for="collection_state" class="nav_label uppercase">Collection</label>
+                    <div class="border_bottom"></div>
+                    <ul class="second_level" role="tablist">
+                        <li class="child_element_small_separator"></li>
+                        <li class="child_element" role="tab">
+                            <div class="element_separator"></div>
+                            <a href="https://www.patek.com/en/collection/new-models-2022" class="nav_link">
+                                New Models 2022
+                            </a>
+                        </li>                        
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/the-patek-philippe-sound/philosophy-on-chiming-watches" class="nav_link">The Patek Philippe Sound</a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/all-models" class="nav_link">All models</a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/watch-finder" class="nav_link">Watch Finder</a>
+                        </li>
+                        <li class="child_element_separator">
+                            <div class="solid_separator"></div>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/grand-complications" class="nav_link"><span class="italic">Grand Complications</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/complications" class="nav_link"><span class="italic">Complications</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/calatrava" class="nav_link"><span class="italic">Calatrava</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/gondolo" class="nav_link"><span class="italic">Gondolo</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/golden-ellipse" class="nav_link"><span class="italic">Golden Ellipse</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/nautilus" class="nav_link"><span class="italic">Nautilus</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/aquanaut" class="nav_link"><span class="italic">Aquanaut</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/twenty4" class="nav_link"><span class="italic">Twenty~4</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/pocket-watches" class="nav_link"><span class="italic">Pocket Watches</span></a>
+                        </li>
+                        <li class="child_element_separator">
+                            <div class="solid_separator"></div>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/rare-handcrafts" class="nav_link"><span>Rare Handcrafts</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/jewelry-accessories" class="nav_link"><span>Jewelry &amp; Accessories</span></a>
+                        </li>
+                        <li class="child_element" role="tab">
+                            <a href="https://www.patek.com/en/collection/movements/manual-winding" class="nav_link"><span>Movements</span></a>
+                        </li>
+                        <li class="child_element_small_separator"></li>
+                    </ul>
+                </li>
+                <li class="nav_element company_nav_element " tabindex="0" role="tab">
+                    <div class="right_arrow">
+                        <img class="mobile_nav" src="https://www.patek.com/resources/svg/fleche_droite_white.svg" alt="RIGHT" />
+                    </div>
+                    <div class="separator"></div>
+                    <label for="company_state" class="nav_label uppercase">Company</label>
+                    <div class="border_bottom"></div>
+                    <ul class="second_level">
+                        <li class="child_element_small_separator"></li>
+                        <li class="child_element">
+                            <div class="element_separator"></div>
+                            <a href="https://www.patek.com/en/company/the-manufacture" class="nav_link">The Manufacture</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/company/savoir-faire" class="nav_link">Savoir-Faire</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/company/history" class="nav_link">History</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/company/library" class="nav_link">Library</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/company/patek-philippe-museum/the-museum" class="nav_link">Patek Philippe Museum</a>
+                        </li>
+                        <li class="child_element_separator">
+                            <div class="solid_separator"></div>
+                        </li>
+                        <li class="child_element"  >
+                            <a href="https://www.patek.com/en/company/philosophy/only-human" class="nav_link italic">Philosophy</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/company/news" class="nav_link italic">News</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/company/technews" class="nav_link italic">TechNews</a>
+                        </li>
+                        <li class="child_element_small_separator"></li>
+                    </ul>
+                </li>
+                <li class="nav_element retailer_nav_element " tabindex="0" role="tab">
+                    <div class="separator"></div>
+                    <div class="right_arrow">
+                        <img class="mobile_nav" src="https://www.patek.com/resources/svg/fleche_droite_white.svg" alt="RIGHT" />
+                    </div>
+                    <label for="retailer_state" class="nav_label uppercase">Retail &amp; Service</label>
+                    <div class="border_bottom"></div>
+                    <ul class="second_level">
+                        <li class="child_element_small_separator"></li>
+                        <li class="child_element">
+                            <div class="element_separator"></div>
+                            <a href="https://www.patek.com/en/retail-service/patek-philippe-salons" class="nav_link">Patek Philippe Salons</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/geolocateretailers" class="nav_link">Authorized Retailers</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/retail-service/distributors" class="nav_link">Distributors</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/geolocateservice" class="nav_link">Service Centers</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/retail-service/services/our-commitment" class="nav_link">Services</a>
+                        </li>
+                        <li class="child_element_separator">
+                            <div class="solid_separator"></div>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/retail-service/the-patek-philippe-register" class="nav_link italic">The Patek Philippe Register</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/retail-service/extract-from-the-archives" class="nav_link italic">Extract from the archives</a>
+                        </li>
+                        <li class="child_element">
+                            <a href="https://www.patek.com/en/retail-service/instructions-for-use-settings/instruction-for-use" class="nav_link italic">Instructions for use &amp; settings</a>
+                        </li>
+                        <li class="child_element_small_separator"></li>
+                    </ul>
+                </li>
+                <li class="nav_element search_element" tabindex="0" role="tab">
+                    <div class="right_arrow">
+                        <img src="https://www.patek.com/resources/svg/fleche_droite_nav_bronze.svg" alt="RIGHT" />
+                    </div>
+                    <div class="separator"></div>
+                    <div class="search">
+                        <img class="brown" src="https://www.patek.com/resources/svg/nav_search.svg" alt="SEARCH" />
+                        <img class="white" src="https://www.patek.com/resources/svg/nav_search_white.svg" alt="SEARCH" />
+                    </div>
+                    <label for="search_state" class="hidden_nav_label"></label>
+                    <div class="border_bottom"></div>
+                </li>
+                <li class="nav_element language_element" tabindex="0" role="tab">
+                    <div class="right_arrow">
+                        <img class="mobile_nav" src="https://www.patek.com/resources/svg/fleche_droite_white.svg" alt="RIGHT" />
+                    </div>
+                    <div class="separator"></div>
+                    <div class="language">
+                        <label for="language_checkbox" class="hidden_lg hidden_xlg italic">
+                                English
+                                                                                                                                                                                                                                                        </label>
+                        <img src="https://www.patek.com/resources/svg/nav_language.svg" alt="LANGUAGE" />
+                    </div>
+                    <ul class="second_level">
+                        <li class="child_element_separator">
+                            <div class="solid_separator"></div>
+                        </li>
+                        <li class="child_element"><a href="https://www.patek.com/en/home" class="nav_link" lang="en">English</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/fr/accueil" class="nav_link" lang="fr">Français</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/de/home" class="nav_link" lang="de">Deutsch</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/it/home" class="nav_link" lang="it">Italiano</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/es/inicio" class="nav_link" lang="es">Español</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/ru/главная" class="nav_link" lang="ru">Pусский</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/chs/百达翡丽官网" class="nav_link" lang="zh">简体中文</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/ja/ホーム" class="nav_link" lang="ja">日本語</a></li>
+                        <li class="child_element"><a href="https://www.patek.com/ar/الصفحة-الرئيسية" class="nav_link" lang="ar">العربية</a></li>
+                        <li class="child_element_small_separator"></li>
+                    </ul>
+                    <label for="language_state" class="hidden_nav_label"></label>
+                    <div class="border_bottom"></div>
+                </li>
+                <li class="nav_element wishlist_element" role="tab">
+                    <a href="https://www.patek.com/en/wishlist" class="nav_link">
+                        <div class="separator"></div>
+                        <div class="wishlist">
+                            <span class="hidden_lg hidden_xlg italic">Wishlist</span>
+                            <img src="https://www.patek.com/resources/svg/nav_whishlist.svg" alt="WISHLIST" />
+                            <span class="italic hidden_xs hidden_sm hidden_md">(<span id="wishlist_counter">0</span>)</span>
+                        </div>
+                        <div class="border_bottom"></div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav_content_mobile_collection" id="nav_content_mobile_collection" role="tablist">
+                <div class="line">
+                    <div class="box_btn">
+                        <a class="btn rect navbrass text" href="https://www.patek.com/en/collection/all-models" dir="ltr" title="All models">
+                            All models
+                        </a>
+                        <a class="btn rect navbrass text" href="https://www.patek.com/en/collection/watch-finder" dir="ltr" title="Watch Finder">
+                            Watch Finder
+                        </a>
+                    </div>
+                </div>
+
+                <a href="https://www.patek.com/en/collection/grand-complications" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/5316P_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5316P_001_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5316P_001_1.jpg" alt="Grand Complications" />
+                    </picture>
+                    <div class="family_name">
+                        Grand Complications
+                        <div class="number_of_models">33 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/complications" class="article_element">
+
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/7130R_014_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/7130R_014_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/7130R_014_1.jpg" alt="Complications" />
+                    </picture>
+                    <div class="family_name">
+                        Complications
+                        <div class="number_of_models">32 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/calatrava" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/5227J_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5227J_001_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5227J_001_1.jpg" alt="Calatrava" />
+                    </picture>
+                    <div class="family_name">
+                        Calatrava
+                        <div class="number_of_models">11 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/gondolo" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/7041R_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/7041R_001_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/7041R_001_1.jpg" alt="Gondolo" />
+                    </picture>
+                    <div class="family_name">
+                        Gondolo
+                        <div class="number_of_models">3 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/golden-ellipse" class="article_element Ref5738R">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/5738R_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5738R_001_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5738R_001_1.jpg" alt="Golden Ellipse" />
+                    </picture>
+                    <div class="family_name">
+                        Golden Ellipse
+                        <div class="number_of_models">3 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/nautilus" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/5712_1A_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5712_1A_001_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5712_1A_001_1.jpg" alt="Nautilus" />
+                    </picture>
+                    <div class="family_name">
+                        Nautilus
+                        <div class="number_of_models">27 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/aquanaut" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/5164R_001.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5164R_001@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5164R_001.jpg" alt="Aquanaut" />
+                    </picture>
+                    <div class="family_name">
+                        Aquanaut
+                        <div class="number_of_models">17 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/twenty4" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/7300_1200A_010_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/7300_1200A_010_1@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/7300_1200A_010_1.jpg" alt="Twenty~4" />
+                    </picture>
+                    <div class="family_name">
+                        Twenty~4
+                        <div class="number_of_models">11 models</div>
+                    </div>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/pocket-watches" class="article_element">
+                    <picture class="banner_picture">
+                        <source srcset="https://static.patek.com/images/articles/face_brown/150/973J_010@2x.jpg 1x, https://static.patek.com/images/articles/face_brown/150/973J_010@2x.jpg 2x" />
+                        <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/973J_010@2x.jpg" alt="Pocket Watches" />
+                    </picture>
+                    <div class="family_name">
+                        Pocket Watches
+                        <div class="number_of_models">5 models</div>
+                    </div>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="full_nav collection_nav_content" id="main_navigation_content_elements">
+        <div class="collection_models">
+            <div class="left_panel">
+                <a href="https://www.patek.com/en/collection/grand-complications" class="article_element">
+                    <div class="family_name">
+                        Grand Complications
+                        <div class="number_of_models">33 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/5316P_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5316P_001_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5316P_001_1.jpg" alt="Grand Complications" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/complications" class="article_element">
+                    <div class="family_name">
+                        Complications
+                        <div class="number_of_models">32 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/7130R_014_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/7130R_014_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/7130R_014_1.jpg" alt="Complications" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/calatrava" class="article_element">
+                    <div class="family_name">
+                        Calatrava
+                        <div class="number_of_models">11 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/5227J_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5227J_001_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5227J_001_1.jpg" alt="Calatrava" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/gondolo" class="article_element">
+                    <div class="family_name">
+                        Gondolo
+                        <div class="number_of_models">3 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/7041R_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/7041R_001_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/7041R_001_1.jpg" alt="Gondolo" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/golden-ellipse" class="article_element Ref5738R">
+                    <div class="family_name">
+                        Golden Ellipse
+                        <div class="number_of_models">3 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/5738R_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5738R_001_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5738R_001_1.jpg" alt="Golden Ellipse" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/nautilus" class="article_element">
+                    <div class="family_name">
+                        Nautilus
+                        <div class="number_of_models">27 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/5712_1A_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5712_1A_001_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5712_1A_001_1.jpg" alt="Nautilus" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/aquanaut" class="article_element">
+                    <div class="family_name">
+                        Aquanaut
+                        <div class="number_of_models">17 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/5164R_001.jpg 1x, https://static.patek.com/images/articles/face_brown/150/5164R_001@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/5164R_001.jpg" alt="Aquanaut" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/twenty4" class="article_element">
+                    <div class="family_name">
+                        Twenty~4
+                        <div class="number_of_models">11 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/7300_1200A_010_1.jpg 1x, https://static.patek.com/images/articles/face_brown/150/7300_1200A_010_1@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/7300_1200A_010_1.jpg" alt="Twenty~4" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/pocket-watches" class="article_element">
+
+                    <div class="family_name">
+                        Pocket Watches
+                        <div class="number_of_models">5 models</div>
+                    </div>
+                    <picture class="banner_picture">
+                        <source data-srcset="https://static.patek.com/images/articles/face_brown/150/973J_010@2x.jpg 1x, https://static.patek.com/images/articles/face_brown/150/973J_010@2x.jpg 2x" />
+                        <img class="lazyload" data-expand="-20" src="https://static.patek.com/images/articles/face_brown/150/973J_010@2x.jpg" alt="Pocket Watches" />
+                    </picture>
+                </a>
+
+                <a href="https://www.patek.com/en/collection/watch-finder" class="article_element">
+                    <div class="family_name watch_finder_label">Watch Finder</div>
+                    <div class="watch_finder_element"></div>
+                </a>
+            </div>
+            <div class="right_panel">
+                <div class="other">
+                    <a href="https://www.patek.com/en/collection/new-models-2022" class="new_models">
+                        <div class="nav_label">
+                            New Models 2022<div class="number_of_models">13 models</div>
+                        </div>
+                    </a>
+                    <a href="https://www.patek.com/en/collection/the-patek-philippe-sound/philosophy-on-chiming-watches" class="sounds_models">
+                        <div class="nav_label">
+                            The Patek Philippe Sound
+                        </div>
+                    </a>
+                    <div class="nav_separator"></div>
+                    <a href="https://www.patek.com/en/collection/all-models" class="current_models">
+                        <div class="nav_label">
+                            All models<div class="number_of_models">142 models</div>
+                        </div>
+                    </a>
+                    <a href="https://www.patek.com/en/collection/rare-handcrafts" class="rare_handcraft">
+                        <div class="nav_label">
+                            Rare Handcrafts
+                        </div>
+                    </a>
+                    <div class="nav_separator"></div>
+                    <a href="https://www.patek.com/en/collection/jewelry-accessories" class="jewels">
+                        <div class="nav_label jewelry_label">
+                            Jewelry &amp; Accessories<div class="number_of_models">40 models</div>
+                        </div>
+                    </a>
+                    <a href="https://www.patek.com/en/collection/movements/manual-winding" class="movements">
+                        <div class="nav_label">
+                            Movements<div class="number_of_models">54 models</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='full_nav company_nav_content'>
+        <div class="panel_content">
+            <div class="top_panel">
+                <a href="https://www.patek.com/en/company/the-manufacture" class="manufacture_panel nav_panel_element">
+                    <div class="nav_label">
+                        The Manufacture<br />
+                        <div class="nav_subtitle">About the last family-owned Genevan watch manufacturer</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/company/savoir-faire" class="savoir_panel nav_panel_element">
+                    <div class="nav_label">
+                        Savoir-Faire<br />
+                        <div class="nav_subtitle">Attention to detail, minute repeaters and rare handcrafts</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/company/history" class="history_panel nav_panel_element">
+                    <div class="nav_label">
+                        History<br />
+                        <div class="nav_subtitle">From 1839 to nowadays...</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/company/patek-philippe-museum/the-museum" class="museum_panel nav_panel_element">
+                    <div class="nav_label">
+                        Patek Philippe Museum<br />
+                        <div class="nav_subtitle">500 years of horological history</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/company/library" class="library_panel nav_panel_element">
+                    <div class="nav_label">
+                        Library<br />
+                        <div class="nav_subtitle">Patek Philippe books</div>
+                    </div>
+                </a>
+            </div>
+            <div class="panel_separator"></div>
+            <div class="bottom_panel">
+                <a href="https://www.patek.com/en/company/philosophy/only-human" class="insta_panel nav_panel_element">
+                    <div class="nav_label">
+                        Philosophy<br />
+                        <div class="nav_subtitle"  >Discover the Patek Philippe Philosophy Series</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/company/news" class="news_panel nav_panel_element">
+                    <div class="nav_label">
+                        News<br />
+                        <div class="nav_subtitle">The latest information about Patek Philippe</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/company/technews" class="technews_panel nav_panel_element">
+                    <div class="nav_label">
+                        TechNews<br />
+                        <div class="nav_subtitle">Explore the secrets of haute horlogerie</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class='full_nav retailer_nav_content'>
+        <div class="panel_content">
+            <div class="top_panel">
+                <a href="https://www.patek.com/en/retail-service/patek-philippe-salons" class="salons_panel nav_panel_element">
+                    <div class="nav_label">
+                        Patek Philippe Salons<br />
+                        <div class="nav_subtitle">Geneva, London and Paris</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/geolocateretailers" class="retailers_panel nav_panel_element">
+                    <div class="nav_label">
+                        Authorized Retailers<br />
+                        <div class="nav_subtitle">Patek Philippe retailers around the world</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/retail-service/distributors" class="distributors_panel nav_panel_element">
+                    <div class="nav_label">
+                        Distributors<br />
+                        <div class="nav_subtitle">Patek Philippe distributors around the world</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/geolocateservice" class="servicecenters_panel nav_panel_element">
+                    <div class="nav_label">
+                        Service Centers<br />
+                        <div class="nav_subtitle">Patek Philippe service centers around the world</div>
+                    </div>
+                </a>
+                <a href="https://www.patek.com/en/retail-service/services/our-commitment" class="service_panel nav_panel_element">
+                    <div class="nav_label">
+                        Services<br />
+                        <div class="nav_subtitle">Caring for your timepiece</div>
+                    </div>
+                </a>
+            </div>
+            <div class="panel_separator"></div>
+            <div class="bottom_panel">
+                <a href="https://www.patek.com/en/retail-service/the-patek-philippe-register" class="owners_panel nav_panel_element">
+                    <div class="nav_label">The Patek Philippe Register</div>
+                </a>
+                <a href="https://www.patek.com/en/retail-service/extract-from-the-archives" class="archive_panel nav_panel_element">
+                    <div class="nav_label">Extract from the archives</div>
+                </a>
+                <a href="https://www.patek.com/en/retail-service/instructions-for-use-settings/instruction-for-use" class="instructions_panel nav_panel_element">
+                    <div class="nav_label">Instructions for use &amp; settings</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class='full_nav search_nav_content'>
+        <div class="panel_content">
+            <form id="global_search_form" method="get" action="/en/search">
+                <label id="lblSearchGlobal" for="q" class="hidden">Search</label>
+                <input id="inputSearchGlobal" aria-label="Search" dir="ltr" name="q" type="text" class="search_input" placeholder="Search" />
+                <button id="btnSearchGlobalClear" class="btn_search clear" alt="CLEAR" src="https://www.patek.com/resources/svg/clear_white_bronze.svg" onclick="Patek.Global.clearGlobalSearch(); return false;">
+                    <img class="btn_search_img clear" src="https://www.patek.com/resources/svg/clear_white_bronze.svg" alt="CLEAR" />
+                </button>
+                <input id="btnSearchGlobalSearch" class="btn_search btn_search_img search" type="image" alt="SEARCH" src="https://www.patek.com/resources/png/search_white.png" />
+            </form>
+        </div>
+    </div>
+    <div class='full_nav language_nav_content'>
+        <div class="panel_content">
+            <div class="language_list">
+                <div class="language_element">
+                        <a href="https://www.patek.com/en/home" lang="en">[&nbsp;&nbsp;English&nbsp;&nbsp;]</a>
+                </div>
+                <div class="language_element">
+                        <a href="https://www.patek.com/fr/accueil" lang="fr">Français</a>
+                </div>
+                <div class="language_element">
+                        <a href="https://www.patek.com/de/home" lang="de">Deutsch</a>
+                </div>
+            </div>
+            <div class="panel_separator"></div>
+            <div class="language_list">
+                <div class="language_element">
+                        <a href="https://www.patek.com/it/home" lang="it">Italiano</a>
+                </div>
+                <div class="language_element">
+                        <a href="https://www.patek.com/es/inicio" lang="es">Español</a>
+                </div>
+                <div class="language_element">
+                        <a href="https://www.patek.com/ru/главная" lang="ru">русский</a>
+                </div>
+            </div>
+            <div class="panel_separator"></div>
+            <div class="language_list">
+                <div class="language_element">
+                        <a href="https://www.patek.com/chs/百达翡丽官网" lang="zh">简体中文</a>
+                </div>
+                <div class="language_element">
+                        <a href="https://www.patek.com/ja/ホーム" lang="ja">日本語</a>
+                </div>
+                <div class="language_element">
+                        <a href="https://www.patek.com/ar/الصفحة-الرئيسية" lang="ar">العربية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav_overlay"></div>
+</nav>
+<div class="main_breadcrumb hidden_xs hidden_sm hidden_md">
+    <ul class="breadcrumb_container">
+                    <li class="last_element">404 Not Found</li>
+
+    </ul>
+</div>
+<script>
+    var previousFocus = "";
+
+    $(document).ready(function () {
+        function resetNav(evt) {
+            if ($(window).width() < 1000)
+                return;
+
+            /* prevent reset when clicking on the nav*/
+            if ($(evt.target).hasClass("nav_label") || $(evt.target).hasClass("nav_element") || $(evt.target).hasClass("radio_nav")) {
+                return;
+            }
+            else {
+                console.log("there");
+
+                if (evt.target.id == "main_navigation_content" || evt.target.id == "main_navigation_content_elements")
+                    return;
+                if ($(evt.target).closest('.nav_label').length)
+                    return;
+                if ($(evt.target).closest('.full_nav, #main_navigation_content > *').length)
+                    return;
+                if ($(evt.target).closest('#main_navigation_content_elements > *').length)
+                    return;
+                // Do processing of click event here for every element except with id menu_content
+                $('input.radio_nav').prop('checked', false);
+            }
+        }
+
+        /* reset nav when clicking outside of nav element */
+        $('body').click(function (evt) {
+            resetNav(evt);
+        });
+
+        /* touchstart event for ipad nav reset */
+        $('body').on('touchstart', function (evt) {
+            resetNav(evt);
+        });
+
+        /* reset nav when clicking on another element of the nav */
+        $('input.radio_nav').on('change', function () {
+            //if ($(window).width() < 1000)
+            //    return;
+            $('input.radio_nav').not(this).prop('checked', false);
+        });
+        $(window).bind('beforeunload', function (evt) {
+            resetNav(evt);
+            $('input#navigation_state').prop('checked', false);
+            $('input#collection_state_mobile').prop('checked', false);
+        });
+        var lastWindowWidth = $(window).width();
+        $(window).resize(function (evt) {
+            if ($(window).width() > 1000 && lastWindowWidth <= 1000) {
+                resetNav(evt);
+                $('input#navigation_state').prop('checked', false);
+                $('input#collection_state_mobile').prop('checked', false);
+            }
+            lastWindowWidth = $(window).width();
+        });
+        $(".nav_element").click(function () {
+            if (previousFocus == $(this)[0].className) {
+                $(this).blur();
+                previousFocus = "";
+            }
+            else {
+                previousFocus = $(this)[0].className;
+                console.log($(this)[0].className);
+            }
+        });
+
+        /* wishlist articles:*/
+
+        /* we get the number of articles in wishlist and update the nav counter*/
+        var wishlistArticlesCount = Patek.Wishlist.getNumberOfArticles();
+        $("#wishlist_counter").text(wishlistArticlesCount);
+
+        /* depending on the presence of articles, we add or remove the has_elements*/
+        /* class (displaying the counter and heart in orange)*/
+        if (wishlistArticlesCount > 0) {
+            $(".nav_element.wishlist_element").addClass("has_elements");
+        }
+        else {
+            $(".nav_element.wishlist_element").removeClass("has_elements");
+        }
+
+        // to prevent blur on parent element (.nav_element)
+        $("li.child_element").on('mousedown', function (e) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            return false;
+        });
+    });
+
+    // detect scroll top from window
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll > 0) {
+            $("html").addClass("scrolled");
+        }
+        else {
+            $("html").removeClass("scrolled");
+        }
+    });
+</script>
+
+    <div class="main_content">
+        <section class="banner_wrapper">
+            <div class="banner_bg">
+                <div class="banner_overlay"></div>
+                <div class="banner_texts">
+                    <header>
+                        <h1 class="title">404 Not Found</h1>
+                    </header>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper to_scroll home_news">
+            <div class="container">
+                <div class="max_width">
+                    <div class="currentHighlight"> Current highlights </div>
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                
+<script>
+    $(document).ready(function () {
+          var slickOptions = {
+            arrows: false,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              dots: true,
+            infinite: false,
+            autoplay: false,
+            useCss: true,
+            useTransform: true,
+            dotsClass: 'dots_navigation',
+            focusOnSelect: true,
+            variableWidth: false,
+              responsive: [
+              {
+                                breakpoint: 500,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    dots: true,
+                                }
+                  },
+               {
+                                breakpoint: 750,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2,
+                                    dots: true,
+                                }
+                  },
+                {
+                                breakpoint: 1000,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3,
+                                    dots: true,
+                                }
+                            },
+                {
+                                breakpoint: 1200,
+                                settings: {
+                                    slidesToShow:3,
+                                    slidesToScroll: 3,
+                                    dots: true,
+                                }
+                            },{
+                                breakpoint: 1600,
+                                settings: {
+                                    slidesToShow:3,
+                                    slidesToScroll: 3,
+                                    dots: true,
+                                }
+                            }
+
+
+                        ]
+        }
+        var slickSliderArticle = $('.highlights_slider_view').slick(slickOptions);
+    });
+</script>
+<section id="hlNews" class="highlights  slider_only">
+    <div class="hl_ctn">
+        <div id="hlNews_slider" class="highlights_slider_view" dir="ltr">
+                <div class="highlights_slider_item highlight_ bloc_new_1">
+                    <section class="bloc_hl">
+                        <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts" href="https://www.patek.com/en/collection/rare-handcrafts">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="first">Collection</span><br />
+                                <span class="second">“Rare Handcrafts 2022” Exhibition Virtual Discovery</span>
+                            </div>
+                        </a>
+                        <div class="thumbnail_picture">
+                            <a class="GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts" href="https://www.patek.com/en/collection/rare-handcrafts" target="_self" title="Rare Handcrafts">
+                                <picture class="GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts">
+                                    <source srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail__160.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                    <source srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_300.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                    <source srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_500.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                    <img src="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_500.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Rare Handcrafts" />
+                                </picture>
+                                <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts">
+                                    <div class="arrow GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts" href="https://www.patek.com/en/collection/rare-handcrafts" target="_self">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="second">“Rare Handcrafts 2022” Exhibition Virtual Discovery</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+                <div class="highlights_slider_item highlight_ bloc_new_2">
+                    <section class="bloc_hl">
+                        <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001" href="https://www.patek.com/en/company/news/annual-calendar-travel-time-ref-5326g-001">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="first">Collection</span><br />
+                                <span class="second">Annual Calendar Travel Time Ref. 5326G-001</span>
+                            </div>
+                        </a>
+                        <div class="thumbnail_picture">
+                            <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001" href="https://www.patek.com/en/company/news/annual-calendar-travel-time-ref-5326g-001" target="_self" title="Annual Calendar Travel Time Ref. 5326G-001">
+                                <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001">
+                                    <source srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail__160.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                    <source srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_300.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                    <source srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_500.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                    <img src="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_500.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Annual Calendar Travel Time Ref. 5326G-001" />
+                                </picture>
+                                <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001">
+                                    <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001" href="https://www.patek.com/en/company/news/annual-calendar-travel-time-ref-5326g-001" target="_self">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="second">Annual Calendar Travel Time Ref. 5326G-001</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+                <div class="highlights_slider_item highlight_ bloc_new_3">
+                    <section class="bloc_hl">
+                        <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="first">Collection</span><br />
+                                <span class="second">A highly contemporary “Vintage” style</span>
+                            </div>
+                        </a>
+                        <div class="thumbnail_picture">
+                            <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" target="_self" title="A highly contemporary “Vintage” style">
+                                <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style">
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail__160.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_300.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                    <img src="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_500@2x.v447906008354745.jpg 2x" alt="A highly contemporary “Vintage” style" />
+                                </picture>
+                                <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style">
+                                    <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" target="_self">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="second">A highly contemporary “Vintage” style</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+                <div class="highlights_slider_item highlight_ bloc_new_4">
+                    <section class="bloc_hl">
+                        <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/timeless-olive-green-dials">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="first">Collection</span><br />
+                                <span class="second">Timeless olive green dials</span>
+                            </div>
+                        </a>
+                        <div class="thumbnail_picture">
+                            <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" target="_self" title="Timeless olive green dials">
+                                <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials">
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail__160.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_300.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                    <img src="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Timeless olive green dials" />
+                                </picture>
+                                <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials">
+                                    <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" target="_self">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="second">Timeless olive green dials</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+                <div class="highlights_slider_item highlight_ bloc_new_5">
+                    <section class="bloc_hl">
+                        <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="first">Collection</span><br />
+                                <span class="second">Three new versions of World Time watches</span>
+                            </div>
+                        </a>
+                        <div class="thumbnail_picture">
+                            <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" target="_self" title="Three new versions of World Time watches">
+                                <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches">
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail__160.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_300.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                    <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                    <img src="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Three new versions of World Time watches" />
+                                </picture>
+                                <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches">
+                                    <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" target="_self">
+                            <div class="hl_link_text" dir="ltr">
+                                <span class="second">Three new versions of World Time watches</span>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+        </div>
+        <div id="hlNews_bw" class="basic_view">
+                <section class="bloc_hl bloc_new_1">
+                    <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts" href="https://www.patek.com/en/collection/rare-handcrafts">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="first">Collection</span><br />
+                            <span class="second">“Rare Handcrafts 2022” Exhibition Virtual Discovery</span>
+                        </div>
+                    </a>
+                    <div class="thumbnail_picture">
+                        <a class="GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts" href="https://www.patek.com/en/collection/rare-handcrafts" target="_self" title="Rare Handcrafts">
+                            <picture class="GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts">
+                                <source srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_160.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                <source srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_300.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                <source srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_500.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                <img src="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/rarehandcrafts_virtual/thumbnail_500.v447906008354745.jpg 1x, /resources/img/rarehandcrafts_virtual/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Rare Handcrafts" />
+                            </picture>
+                            <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts">
+                                <div class="arrow GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="collection/rare-handcrafts" href="https://www.patek.com/en/collection/rare-handcrafts" target="_self">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="second">“Rare Handcrafts 2022” Exhibition Virtual Discovery</span>
+                        </div>
+                    </a>
+                </section>
+                <section class="bloc_hl bloc_new_2">
+                    <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001" href="https://www.patek.com/en/company/news/annual-calendar-travel-time-ref-5326g-001">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="first">Collection</span><br />
+                            <span class="second">Annual Calendar Travel Time Ref. 5326G-001</span>
+                        </div>
+                    </a>
+                    <div class="thumbnail_picture">
+                        <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001" href="https://www.patek.com/en/company/news/annual-calendar-travel-time-ref-5326g-001" target="_self" title="Annual Calendar Travel Time Ref. 5326G-001">
+                            <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001">
+                                <source srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_160.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                <source srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_300.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                <source srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_500.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                <img src="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/launch_2022_5326/thumbnail_500.v447906008354745.jpg 1x, /resources/img/launch_2022_5326/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Annual Calendar Travel Time Ref. 5326G-001" />
+                            </picture>
+                            <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001">
+                                <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/annual-calendar-travel-time-ref-5326g-001" href="https://www.patek.com/en/company/news/annual-calendar-travel-time-ref-5326g-001" target="_self">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="second">Annual Calendar Travel Time Ref. 5326G-001</span>
+                        </div>
+                    </a>
+                </section>
+                <section class="bloc_hl bloc_new_3">
+                    <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="first">Collection</span><br />
+                            <span class="second">A highly contemporary “Vintage” style</span>
+                        </div>
+                    </a>
+                    <div class="thumbnail_picture">
+                        <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" target="_self" title="A highly contemporary “Vintage” style">
+                            <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style">
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_160.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_300.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                <img src="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/watchesandwonders_2022_vintage/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_vintage/thumbnail_500@2x.v447906008354745.jpg 2x" alt="A highly contemporary “Vintage” style" />
+                            </picture>
+                            <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style">
+                                <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/a-highly-contemporary-vintage-style" target="_self">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="second">A highly contemporary “Vintage” style</span>
+                        </div>
+                    </a>
+                </section>
+                <section class="bloc_hl bloc_new_4">
+                    <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/timeless-olive-green-dials">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="first">Collection</span><br />
+                            <span class="second">Timeless olive green dials</span>
+                        </div>
+                    </a>
+                    <div class="thumbnail_picture">
+                        <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" target="_self" title="Timeless olive green dials">
+                            <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials">
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_160.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_300.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                <img src="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/watchesandwonders_2022_green/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_green/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Timeless olive green dials" />
+                            </picture>
+                            <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials">
+                                <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/timeless-olive-green-dials" target="_self">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="second">Timeless olive green dials</span>
+                        </div>
+                    </a>
+                </section>
+                <section class="bloc_hl bloc_new_5">
+                    <a class="hl_link GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="first">Collection</span><br />
+                            <span class="second">Three new versions of World Time watches</span>
+                        </div>
+                    </a>
+                    <div class="thumbnail_picture">
+                        <a class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" target="_self" title="Three new versions of World Time watches">
+                            <picture class="GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches">
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_160.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_160@2x.v447906008354745.jpg 2x" media="(min-width: 0px) and (max-width: 160px)" />
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_300.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_300@2x.v447906008354745.jpg 2x" media="(min-width: 161px) and (max-width: 300px)" />
+                                <source srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_500@2x.v447906008354745.jpg 2x" media="(min-width: 301px)" />
+                                <img src="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_500.v447906008354745.jpg" srcset="https://www.patek.com/resources/img/watchesandwonders_2022_worldtime/thumbnail_500.v447906008354745.jpg 1x, /resources/img/watchesandwonders_2022_worldtime/thumbnail_500@2x.v447906008354745.jpg 2x" alt="Three new versions of World Time watches" />
+                            </picture>
+                            <div class="arrow_box GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches">
+                                <div class="arrow GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="hl_link bottom GTMgotoPage" data-format="news" data-otherPage="company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" href="https://www.patek.com/en/company/news/watches-wonders-geneva-2022/three-new-versions-of-world-time-watches" target="_self">
+                        <div class="hl_link_text" dir="ltr">
+                            <span class="second">Three new versions of World Time watches</span>
+                        </div>
+                    </a>
+                </section>
+        </div>
+    </div>
+</section>
+                <div class="max_width bloc_more_news">
+                    <a class="GTMgotoPage btn rect bronze text" data-format="news" data-otherPage="company/news" href="https://www.patek.com/en/company/news" dir="ltr" title="More">
+                        More
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="collections">
+            
+<script>
+    $(document).ready(function () {
+        var slickSliderArticle = $('.products_slider_view').slick({
+            arrows: false,
+            dots: true,
+            infinite: false,
+            slidesToShow: 8,
+            slidesToScroll: 8,
+            autoplay: false,
+            autoHeight: true,
+            useCss: true,
+            useTransform: true,
+            dotsClass: 'dots_navigation',
+            focusOnSelect: true,
+            centerMode: false,
+            variableWidth: true,
+           
+            responsive: [
+                {
+                    breakpoint: 1450,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 6,
+                        autoplay: false,
+                        centerMode: false,
+                        variableWidth: true,
+                    }
+                },
+                {
+                    breakpoint: deviceSizes.xlgDevice,
+                    settings: {
+                        slidesToShow: 7,
+                        slidesToScroll: 7,
+                        autoplay: false,
+                        centerMode: false,
+                        variableWidth: true,
+                    }
+                },
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5,
+                        autoplay: false,
+                        centerMode: false,
+                        variableWidth: true,
+                    }
+                },
+                {
+                    breakpoint: deviceSizes.mdDevice,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        autoplay: false,
+                        centerMode: false,
+                        variableWidth: true,
+                    }
+                },
+                 {
+                    breakpoint: 680,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        centerMode: false,
+                        variableWidth: true,
+                    }
+                },
+                {
+                    breakpoint: deviceSizes.smDevice,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        centerMode: false,
+                        variableWidth: true,
+                    }
+                },
+                {
+                    breakpoint: deviceSizes.xsDevice,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: true,
+                        variableWidth: true,
+                    }
+                }
+
+            ]
+        });
+    });
+</script>
+<section id="allmodels_products" class="products">
+    <div class="container brown product_container">
+        <div class="max_width row">
+            <div class="products_section_title" dir="ltr"><strong>Patek Philippe</strong> Watches</div>
+            <div class="products_slider_view" dir="ltr">
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/grand-complications">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/5320G_011_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/5320G_011_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/5320G_011_1.jpg" alt="Grand Complications" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Grand Complications</div>
+                                <div class="number_of_models" dir="ltr">33 models</div>
+                                <div class="articleRef_slider" dir="ltr">5320G-011</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/complications">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/5930P_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/5930P_001_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/5930P_001_1.jpg" alt="Complications" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Complications</div>
+                                <div class="number_of_models" dir="ltr">32 models</div>
+                                <div class="articleRef_slider" dir="ltr">5930P-001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/calatrava">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/5227J_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/5227J_001_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/5227J_001_1.jpg" alt="Calatrava" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Calatrava</div>
+                                <div class="number_of_models" dir="ltr">11 models</div>
+                                <div class="articleRef_slider" dir="ltr">5227J-001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/gondolo">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/7041R_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/7041R_001_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/7041R_001_1.jpg" alt="Gondolo" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Gondolo</div>
+                                <div class="number_of_models" dir="ltr">3 models</div>
+                                <div class="articleRef_slider" dir="ltr">7041R-001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/golden-ellipse">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/5738R_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/5738R_001_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/5738R_001_1.jpg" alt="Golden Ellipse" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Golden Ellipse</div>
+                                <div class="number_of_models" dir="ltr">3 models</div>
+                                <div class="articleRef_slider" dir="ltr">5738R-001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/nautilus">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/5712_1A_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/5712_1A_001_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/5712_1A_001_1.jpg" alt="Nautilus" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Nautilus</div>
+                                <div class="number_of_models" dir="ltr">27 models</div>
+                                <div class="articleRef_slider" dir="ltr">5712/1A-001</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/aquanaut">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/5168G_010_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/5168G_010_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/5168G_010_1.jpg" alt="Aquanaut" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Aquanaut</div>
+                                <div class="number_of_models" dir="ltr">17 models</div>
+                                <div class="articleRef_slider" dir="ltr">5168G-010</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="products_slider_item">
+                        <a href="https://www.patek.com/en/collection/twenty4">
+                            <div class="products_slider_item_image">
+                                <picture class="banner_picture">
+                                    <source srcset="https://static.patek.com/images/articles/face_brown/270/7300_1200A_001_1.jpg 1x, https://static.patek.com/images/articles/face_brown/270/7300_1200A_001_1@2x.jpg 2x" />
+                                    <img data-expand="-20" src="https://static.patek.com/images/articles/face_brown/270/7300_1200A_001_1.jpg" alt="Twenty~4" />
+                                </picture>
+                            </div>
+                            <div class="family_name">
+                                <div class="collection_name" dir="ltr">Twenty~4</div>
+                                <div class="number_of_models" dir="ltr">11 models</div>
+                                <div class="articleRef_slider" dir="ltr">7300/1200A-001</div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </section>
+
+        
+<section class="slider_blabla">
+    <div class="box_max">
+        <div class="slider_banner ths_phs">
+            <div class="bg_img"></div>
+            <div class="ctn">
+                <div class="txts">
+                    <h2 dir="ltr">
+                        Independent, family-owned Genevan manufacture
+                    </h2>
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                    <p dir="ltr">
+                        The power of independence: a total creative freedom
+                    </p>
+                </div>
+                <div class="link">
+                    <a class="GTMgotoPage btn rect bronze text" data-format="authorizedretailers"
+                       data-otherPage="company/the-manufacture"
+                       href="https://www.patek.com/en/company/the-manufacture#patek-philippe-key-points"
+                       dir="ltr" title="The Manufacture">
+                        Discover
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <picture>
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_THS_PHS_500.jpg 1x, /resources/img/home/slider/Banner_THS_PHS_500@2x.jpg 2x" media="(min-width: 0px) and (max-width: 499px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_THS_PHS_500.jpg 1x, /resources/img/home/slider/Banner_THS_PHS_500@2x.jpg 2x" media="(min-width: 500px) and (max-width: 749px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_THS_PHS_1200.jpg 1x, /resources/img/home/slider/Banner_THS_PHS_1200@2x.jpg 2x" media="(min-width: 750px)" />
+                    <img src="https://www.patek.com/resources/img/home/slider/Banner_THS_PHS_1200.jpg" srcset="https://www.patek.com/resources/img/home/slider/Banner_THS_PHS_1200.jpg 1x, /resources/img/home/slider/Banner_THS_PHS_1200.jpg 2x" alt="Authorized Retailers" />
+                </picture>
+            </div>
+        </div>
+        <div class="slider_banner ppseal">
+            <div class="bg_img"></div>
+            <div class="ctn">
+                <div class="txts">
+                    <h2 dir="ltr">
+                        The Patek Philippe Seal
+                    </h2>
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                    <p dir="ltr">
+                        When the exceptional becomes the rule
+                    </p>
+                </div>
+                <div class="link">
+                    <a class="GTMgotoPage btn rect bronze text" data-format="authorizedretailers"
+                       data-otherPage="company/the-manufacture"
+                       href="https://www.patek.com/en/company/the-manufacture#patek-philippe-seal"
+                       dir="ltr" title="The Manufacture">
+                        Discover
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <picture>
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_PPSeal_1_500.jpg 1x, /resources/img/home/slider/Banner_PPSeal_1_500@2x.jpg 2x" media="(min-width: 0px) and (max-width: 499px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_PPSeal_1_500.jpg 1x, /resources/img/home/slider/Banner_PPSeal_1_500@2x.jpg 2x" media="(min-width: 500px) and (max-width: 749px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_PPSeal_1_1200.jpg 1x, /resources/img/home/slider/Banner_PPSeal_1_1200@2x.jpg 2x" media="(min-width: 750px)" />
+                    <img src="https://www.patek.com/resources/img/home/slider/Banner_PPSeal_1_1200.jpg" srcset="https://www.patek.com/resources/img/home/slider/Banner_PPSeal_1_1200.jpg 1x, /resources/img/home/slider/Banner_PPSeal_1_1200.jpg 2x" alt="Authorized Retailers" />
+                </picture>
+            </div>
+        </div>
+        <div class="slider_banner savoirfaire">
+            <div class="bg_img"></div>
+            <div class="ctn">
+                <div class="txts">
+                    <h2 dir="ltr">
+                        Savoir-Faire: The Human Touch
+                    </h2>
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                    <p dir="ltr">
+                        The irreplaceable skill of hand-finishing
+                    </p>
+                </div>
+                <div class="link">
+                    <a class="GTMgotoPage btn rect bronze text" data-format="authorizedretailers"
+                       data-otherPage="company/savoir-faire"
+                       href="https://www.patek.com/en/company/savoir-faire"
+                       dir="ltr" title="Savoir-Faire">
+                        Discover
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <picture>
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_RHC_SavoirFaire_500.jpg 1x, /resources/img/home/slider/Banner_RHC_SavoirFaire_500@2x.jpg 2x" media="(min-width: 0px) and (max-width: 499px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_RHC_SavoirFaire_500.jpg 1x, /resources/img/home/slider/Banner_RHC_SavoirFaire_500@2x.jpg 2x" media="(min-width: 500px) and (max-width: 749px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_RHC_SavoirFaire_1200.jpg 1x, /resources/img/home/slider/Banner_RHC_SavoirFaire_1200@2x.jpg 2x" media="(min-width: 750px)" />
+                    <img src="https://www.patek.com/resources/img/home/slider/Banner_RHC_SavoirFaire_1200.jpg" srcset="https://www.patek.com/resources/img/home/slider/Banner_RHC_SavoirFaire_1200.jpg 1x, /resources/img/home/slider/Banner_RHC_SavoirFaire_1200.jpg 2x" alt="Savoir-Faire" />
+                </picture>
+            </div>
+        </div>
+        <div class="slider_banner museum">
+            <div class="bg_img"></div>
+            <div class="ctn">
+                <div class="txts">
+                    <h2 dir="ltr">
+                        The Patek Philippe Museum
+                    </h2>
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                    <p dir="ltr">
+                        A “Temple to watchmaking” in Geneva
+                    </p>
+                </div>
+                <div class="link">
+                    <a class="GTMgotoPage btn rect bronze text" data-format="authorizedretailers"
+                       data-otherPage="company/patek-philippe-museum/the-museum"
+                       href="https://www.patek.com/en/company/patek-philippe-museum/the-museum"
+                       dir="ltr" title="The Museum">
+                        Discover
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <picture>
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_PP_MUSEUM_1_500.jpg 1x, /resources/img/home/slider/Banner_PP_MUSEUM_1_500@2x.jpg 2x" media="(min-width: 0px) and (max-width: 499px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_PP_MUSEUM_1_500.jpg 1x, /resources/img/home/slider/Banner_PP_MUSEUM_1_500@2x.jpg 2x" media="(min-width: 500px) and (max-width: 749px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/Banner_PP_MUSEUM_1_1200.jpg 1x, /resources/img/home/slider/Banner_PP_MUSEUM_1_1200@2x.jpg 2x" media="(min-width: 750px)" />
+                    <img src="https://www.patek.com/resources/img/home/slider/Banner_PP_MUSEUM_1_1200.jpg" srcset="https://www.patek.com/resources/img/home/slider/Banner_PP_MUSEUM_1_1200.jpg 1x, /resources/img/home/slider/Banner_PP_MUSEUM_1_1200.jpg 2x" alt="Authorized Retailers" />
+                </picture>
+            </div>
+        </div>
+        <div class="slider_banner history">
+            <div class="bg_img"></div>
+            <div class="ctn">
+                <div class="txts">
+                    <h2 dir="ltr">
+                        The History of Patek Philippe
+                    </h2>
+                    <div class="linebox">
+                        <div class="line"></div>
+                    </div>
+                    <p dir="ltr">
+                        From 1839 to nowadays...
+                    </p>
+                </div>
+                <div class="link">
+                    <a class="GTMgotoPage btn rect bronze text" data-format="authorizedretailers"
+                       data-otherPage="company/history"
+                       href="https://www.patek.com/en/company/history"
+                       dir="ltr" title="History">
+                        Discover
+                    </a>
+                </div>
+            </div>
+            <div class="img">
+                <picture>
+                    <source srcset="https://www.patek.com/resources/img/home/slider/banner_fondateurs_500.jpg 1x, /resources/img/home/slider/banner_fondateurs_500@2x.jpg 2x" media="(min-width: 0px) and (max-width: 499px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/banner_fondateurs_500.jpg 1x, /resources/img/home/slider/banner_fondateurs_500@2x.jpg 2x" media="(min-width: 500px) and (max-width: 749px)" />
+                    <source srcset="https://www.patek.com/resources/img/home/slider/banner_fondateurs_1200.jpg 1x, /resources/img/home/slider/banner_fondateurs_1200@2x.jpg 2x" media="(min-width: 750px)" />
+                    <img src="https://www.patek.com/resources/img/home/slider/banner_fondateurs_1200.jpg" srcset="https://www.patek.com/resources/img/home/slider/banner_fondateurs_1200.jpg 1x, /resources/img/home/slider/banner_fondateurs_1200.jpg 2x" alt="Authorized Retailers" />
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        var slickSliderBlabla = $('.box_max').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            useCss: true,
+            useTransform: true,
+            dotsClass: 'dots_navigation',
+            focusOnSelect: true,
+   
+        });
+    });
+</script>
+
+        <section id="authorizedretailers">
+            
+<section class="background_authorized">
+    <div class="inside_banner retailers">
+        <div class="bg_img"></div>
+        <div class="img">
+            <picture>
+                <source srcset="https://www.patek.com/resources/img/page_banners/banner_authorized_retailers_2_mobile.jpg 1x, /resources/img/page_banners/banner_authorized_retailers_2_mobile@2x.jpg 2x" media="(min-width: 0px) and (max-width: 499px)" />
+                <source srcset="https://www.patek.com/resources/img/page_banners/banner_authorized_retailers_2_mobile.jpg 1x, /resources/img/page_banners/banner_authorized_retailers_2_mobile@2x.jpg 2x" media="(min-width: 500px) and (max-width: 749px)" />
+                <source srcset="https://www.patek.com/resources/img/page_banners/banner_authorized_retailers_2_desktop.jpg 1x, /resources/img/page_banners/banner_authorized_retailers_2_desktop@2x.jpg 2x" media="(min-width: 750px)" />
+                <img src="https://www.patek.com/resources/img/page_banners/banner_authorized_retailers_2_desktop.jpg" srcset="https://www.patek.com/resources/img/page_banners/banner_authorized_retailers_2_desktop.jpg 1x, /resources/img/page_banners/banner_authorized_retailers_2_desktop.jpg 2x" alt="Authorized Retailers" />
+            </picture>
+        </div>
+        <div class="ctn">
+            <div class="txts">
+                <h2 dir="ltr">Authorized Retailers</h2>
+                <p dir="ltr">Locate your nearest retailer using our comprehensive retailer search. Retailer names, addresses and in some cases, telephone numbers are provided in the database.</p>
+                <p dir="ltr">Please note that if a retailer's name is not found in this database, they are not an Authorized Patek Philippe retailer.</p>
+            </div>
+            <div class="link">
+                <a class="GTMgotoPage btn rect bronze text" data-format="authorizedretailers"
+                   data-otherPage="retail-service/authorized-retailers"
+                   href="https://www.patek.com/en/geolocateretailers"
+                   dir="ltr" title="Authorized Retailers">
+                    Authorized Retailers
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+        </section>
+    </div>
+
+    
+<section id="main_footer" class="section_footer" dir="ltr">
+    <div class="section_separator hidden hidden_xs hidden_sm hidden_md"></div>
+    <div class="nav_elements">
+        <!-- radio buttons for nav opened panels status -->
+
+        <div class="box mobile ">
+            <input class="radio_footer" type="checkbox" id="collection_state_footer" name="footer_state" value="0" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="collection_state_footer" class="uppercase">Collection</label>
+            <div class="content bloc1">
+                <a href="https://www.patek.com/en/collection/all-models" dir="ltr" class="bold">
+                    <strong>All models</strong>
+                </a>
+                <a href="https://www.patek.com/en/collection/new-models-2022" dir="ltr">
+                    New Models 2022
+                </a>
+                <div class="split_bar"></div>
+                <a class="italic" href="https://www.patek.com/en/collection/grand-complications" dir="ltr">Grand Complications</a>
+                <a class="italic" href="https://www.patek.com/en/collection/complications" dir="ltr">Complications</a>
+                <a class="italic" href="https://www.patek.com/en/collection/calatrava" dir="ltr">Calatrava</a>
+                <a class="italic" href="https://www.patek.com/en/collection/gondolo" dir="ltr">Gondolo</a>
+                <a class="italic" href="https://www.patek.com/en/collection/golden-ellipse" dir="ltr">Golden Ellipse</a>
+                <a class="italic" href="https://www.patek.com/en/collection/nautilus" dir="ltr">Nautilus</a>
+                <a class="italic" href="https://www.patek.com/en/collection/aquanaut" dir="ltr">Aquanaut</a>
+                <a class="italic" href="https://www.patek.com/en/collection/twenty4" dir="ltr">Twenty~4</a>
+                <a class="italic" href="https://www.patek.com/en/collection/pocket-watches" dir="ltr">Pocket Watches</a>
+                <a class="italic" href="https://www.patek.com/en/collection/rare-handcrafts" dir="ltr">Rare Handcrafts</a>
+            </div>
+        </div>
+        <div class="box desktop">
+            <input class="radio_footer" type="checkbox" id="collection_state_footer" name="footer_state" value="0" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="collection_state_footer" class="uppercase">Collection</label>
+            <div class="content">
+                <a href="https://www.patek.com/en/collection/all-models" dir="ltr" class="bold">
+                    <strong>All models</strong>
+                </a>
+                <a href="https://www.patek.com/en/collection/new-models-2022" dir="ltr">
+                    New Models 2022
+                </a>
+                <div class="split_bar"></div>
+                <a class="italic" href="https://www.patek.com/en/collection/grand-complications" dir="ltr">Grand Complications</a>
+                <a class="italic" href="https://www.patek.com/en/collection/complications" dir="ltr">Complications</a>
+                <a class="italic" href="https://www.patek.com/en/collection/calatrava" dir="ltr">Calatrava</a>
+                <a class="italic" href="https://www.patek.com/en/collection/gondolo" dir="ltr">Gondolo</a>
+                <a class="italic" href="https://www.patek.com/en/collection/golden-ellipse" dir="ltr">Golden Ellipse</a>
+                <a class="italic" href="https://www.patek.com/en/collection/nautilus" dir="ltr">Nautilus</a>
+                <a class="italic" href="https://www.patek.com/en/collection/aquanaut" dir="ltr">Aquanaut</a>
+            </div>
+        </div>
+        <div class="box desktop">
+            <div class="content">
+                <a class="italic no_margin" href="https://www.patek.com/en/collection/twenty4" dir="ltr">Twenty~4</a>
+                <a class="italic" href="https://www.patek.com/en/collection/pocket-watches" dir="ltr">Pocket Watches</a>
+                <a class="italic" href="https://www.patek.com/en/collection/rare-handcrafts" dir="ltr">Rare Handcrafts</a>
+            </div>
+        </div>
+        <div class="box">
+            <input class="radio_footer" type="checkbox" id="company_state_footer" name="footer_state" value="1" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="company_state_footer" class="uppercase">Company</label>
+            <div class="content bloc2">
+                <a href="https://www.patek.com/en/company/savoir-faire" dir="ltr" class="bold">Savoir-Faire</a>
+                <a href="https://www.patek.com/en/company/the-manufacture" dir="ltr">The Manufacture</a>
+            </div>
+        </div>
+        <div class="box">
+            <input class="radio_footer" type="checkbox" id="others_state_footer" name="footer_state" value="2" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="others_state_footer" class="uppercase">Others</label>
+            <div class="content bloc3">
+                <a href="https://www.patek.com/en/wallpapers" dir="ltr">Wallpapers</a>
+                <a href="https://www.patek.com/en/glossary" dir="ltr">Glossary</a>
+                <a style="cursor:pointer" dir="ltr" onclick="Patek.Cookies.displayMessage()">Cookie Settings</a>
+            </div>
+        </div>
+        <div class="box">
+            <input class="radio_footer" type="checkbox" id="retail_state" name="footer_state" value="3" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="retail_state" class="uppercase">Retail</label>
+            <div class="content bloc4">
+                <a href="https://www.patek.com/en/retail-service/patek-philippe-salons" dir="ltr">Patek Philippe Salons</a>
+                <a href="https://www.patek.com/en/geolocateretailers" dir="ltr" class="bold">Authorized Retailers</a>
+            </div>
+        </div>
+        <div class="box">
+            <input class="radio_footer" type="checkbox" id="service_state" name="footer_state" value="4" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="service_state" class="uppercase">Services</label>
+            <div class="content bloc5">
+                <a onclick="Patek.Owners.displaySection('/en/owners');" dir="ltr" class="bold">
+                    Owners
+                </a>
+                <a href="https://www.patek.com/en/retail-service/instructions-for-use-settings/instruction-for-use" dir="ltr">Instructions for use &amp; settings</a>
+                <a href="https://www.patek.com/en/retail-service/service-centers" dir="ltr">Service Centers</a>
+                <a href="https://www.patek.com/en/retail-service/extract-from-the-archives" dir="ltr">Extract from the archives</a>
+            </div>
+        </div>
+        <div class="box">
+            <input class="radio_footer" type="checkbox" id="contact_state" name="footer_state" value="5" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="contact_state" class="uppercase">Contact</label>
+            <div class="content bloc6">
+                <a href="https://www.patek.com/en/contact" dir="ltr" class="bold"> Contact </a>
+                <a href="https://www.patek.com/en/careers" dir="ltr">Careers</a>
+                <a href="http://press.patek.com" target="_blank" dir="ltr">Press</a>
+            </div>
+        </div>
+        <div class="box">
+            <input class="radio_footer" type="checkbox" id="follow_state" name="footer_state" value="6" aria-hidden="true" aria-label="Footer State" title="Footer State" />
+            <label for="follow_state" class="uppercase">Follow us</label>
+            <div class="content bloc7">
+                <a href="https://www.patek.com/en/company/press-releases" dir="ltr">
+                    Press Releases
+                </a>
+                <a class="instagram" href="https://www.instagram.com/patekphilippe" target="_blank" dir="ltr">
+                    <span class="label_text_screenreader">instagram</span>
+                </a>
+                <a class="youtube" href="https://www.youtube.com/user/PatekPhilippeGeneva" target="_blank" dir="ltr">
+                    <span class="label_text_screenreader">youtube</span>
+                </a>
+                <a class="wechat" dir="ltr">
+                    <span class="label_text_screenreader">vimeo</span>
+                </a>
+                <script>
+                    $(document).ready(function () {
+                        $('.wechat_overlay').hide();
+
+                        $('.wechat_overlay_close').on('click', function () {
+                            $('.wechat_overlay').hide();
+                        });
+
+                        $('.wechat').on('click', function () {
+                            $('.wechat_overlay').show();
+                        });
+                    })
+
+
+                </script>
+                <div class="wechat_overlay" style="display:none">
+                    <div class="wechat_overlay_close">
+                        <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 234.2 234.2" style="enable-background:new 0 0 234.2 234.2;" xml:space="preserve">
+
+
+<g id="croix">
+	<g id="plus_x5F_zoom">
+		<polygon points="170.4,161.6 125.9,117.1 170.5,72.5 161.6,63.6 117,108.2 72.5,63.6 63.6,72.5 108.1,117.1 
+			63.6,161.6 72.5,170.5 117,126 161.5,170.5 		"/>
+	</g>
+</g>
+</svg>
+
+                    </div>
+                    <div class="wechat_overlay_container">
+
+                        <div class="wechat_overlay_logo">
+                            <img class="patek_calatrava " src="https://www.patek.com/resources/svg/logo_patek_calatrava_beige.svg" alt="Patek Philippe" />
+                            <img class="patek_logo " src="https://www.patek.com/resources/svg/logo_patek_text_beige.svg" alt="Patek Philippe" />
+                        </div>
+
+                        <div class="wechat_overlay_qrCode">
+                        
+
+<picture class="dropdown">
+            <source srcset="https://www.patek.com/resources/img/launch_wechat/qrcode_300.jpg 1x, /resources/img/launch_wechat/qrcode_300@2x.jpg 2x" media="(min-width: 0px) and (max-width: 500px)" />
+            <source srcset="https://www.patek.com/resources/img/launch_wechat/qrcode_500.jpg 1x, /resources/img/launch_wechat/qrcode_500@2x.jpg 2x" media="(min-width: 501px)" />
+
+    <img src="https://www.patek.com/resources/img/launch_wechat/qrcode.jpg" alt="" />
+</picture>
+                        </div>
+
+                        <div class="wechat_overlay_text">
+                            <p>敬请扫描二维码</p>
+                            <p>关注百达翡丽官方微信公众号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <a href="https://www.patek.com/en/site-map" class="sitemap" dir="ltr">
+                Site Map
+            </a>
+        </div>
+    </div>
+    <div class="footer_separator"></div>
+    <div class="footer_logo">
+        <div class="info_logo">
+            <span>[&nbsp;&nbsp;<a href="https://www.patek.com/en/legal-notices/terms-and-conditions" dir="ltr">Legal notices</a>&nbsp;&nbsp;]</span>
+
+            <span>&nbsp;-&nbsp;</span> <span class="copy">&#169; 2022 Patek Philippe <abbr title="Société anonyme">SA</abbr></span>
+        </div>
+        <img class="patek_logo" src="https://www.patek.com/resources/svg/logo_patek_beige.svg" alt="Patek Philippe" />
+    </div>
+    <div class="footer_top">
+        <a onclick="Patek.Global.scrollToTop();">
+            <div class="imgs">
+                <div class="img_top">
+                    <img class="patek_logo" src="https://www.patek.com/resources/svg/fleche_haut_white.svg" alt="Patek Philippe" />                    
+                </div>
+                <div class="img_top">
+                    <img class="patek_logo" src="https://www.patek.com/resources/svg/fleche_haut_white.svg" alt="Patek Philippe" />
+                </div>
+                <div class="img_top">
+                    <img class="patek_logo" src="https://www.patek.com/resources/svg/fleche_haut_white.svg" alt="Patek Philippe" />
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+<div id="modal_mask" class="modal_mask"></div>
+<div id="cookies_disclaimer">
+    <div class="ctn">
+        <div class="texts">
+            <p dir="ltr">We use <cite>cookies</cite> to deliver website functionality and analytics as described in our cookie policy and to ensure that we give you the best experience on our website. By continuing to use our website without changing the settings, you are agreeing to our use of cookies.</p>
+        </div>
+        <div class="cmds">
+            <a class="btn beige rect text" onclick="Patek.Cookies.allow();" dir="ltr">OK</a>
+            <a class="btn lightbrown rect text" onclick="Patek.Cookies.forbid();" style="margin-top:5px;" dir="ltr">Reject</a>
+        </div>
+    </div>
+</div>
+<div id="owners_login" class="modal">
+    <div class="close">
+        <a class="btn bronze rect img close" onclick="Patek.Owners.closeLogin();">
+            <div class="picto close"></div>
+        </a>
+    </div>
+    <div class="bg"></div>
+    <div class="ctn">
+        <div class="intro">
+            <header>
+                <span>Owners</span>
+            </header>
+
+            <p class="ownersIntrotext">If you are already a subscriber to <strong>Patek Philippe magazine</strong> and wish to have access to the <strong>Owners</strong> area, either <a href ="/en/contact?subject=owners">contact us</a> or email <a href ="mailto:owners@patek.com?subject=Patek Philippe Magazine">owners@patek.com</a>, giving your magazine subscription details (name, postal address and email address and whether you wish to receive emails from us in future). We will then provide access.</p>
+        </div>
+        <div class="form">
+            <form id="formLogin" name="formLogin" novalidate>
+                <div class="lbl">
+                    <label for="inputOwnersLogin">Please enter your email address to log in</label>
+                </div>
+                <div class="input">
+                    <input id="inputOwnersLogin" name="inputOwnersLogin" type="text" onkeyup="Patek.Owners.loginKeyUp(this);" onkeypress="Patek.Owners.validateLoginOnKeyPress();" maxlength="255" />
+                </div>
+                <div class="cmds">
+                    <button id="btnOwnersReset" class="btn bronze rect text disabled small" accesskey="z" onclick="Patek.Owners.resetLogin(); return false;">Reset</button>
+                    <button id="btnOwnersSend" class="btn orange rect text small" accesskey="y" onclick="Patek.Owners.validateLogin(); return false;">Send</button>
+                </div>
+                <div class="msg"></div>
+            </form>
+        </div>
+        <div class="register">
+            <p class="bold">Are you a new Owner?</p>
+            <p>Please fill in the Owner registration form. You will then have access to the exclusive Patek Philippe Owners area.</p>
+            <div class="txtbtn">
+                <a class="btn orange rect text small" href="https://www.patek.com/en/retail-service/the-patek-philippe-register">Register</a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="https://www.patek.com/resources/svg/logo_patek_beige.svg" alt="Patek Philippe" />
+        </div>
+    </div>
+</div>
+<script>
+    var previousOpenedSectionId = "";
+
+    $(document).ready(function () {
+        $("body:not(.first_level_element)").click(function (e) {
+            $("#hiddenfooter_state").prop("checked", true);
+            $(".radio_footer").prop("checked", false);
+
+            if (e.target.type == "checkbox" && e.target.name == "footer_state") {
+                if (previousOpenedSectionId == e.target.id) {
+                    $("#" + e.target.id).prop("checked", false);
+                    previousOpenedSectionId = "";
+                }
+                else {
+                    $("#" + e.target.id).prop("checked", true);
+                    previousOpenedSectionId = e.target.id;
+                }
+            }
+        });
+    });
+</script>
+
+    
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "404 Not Found",
+        "item": "https://www.patek.com/en/404-not-found"
+      }
+      ]
+  }
+</script>
+</body>
+</html>
