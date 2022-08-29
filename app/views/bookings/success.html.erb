@@ -27,8 +27,9 @@
     </div>
   </div>
   <div class="d-flex flex-column">
-  <div class="top date">
-        <p style="font-size: small"><%= "Booking date: #{@booking.start_date.strftime('%d %b')} - #{@booking.end_date.strftime('%d %b')}" %></p>
+  <div class="top-date p-5" style="background-color:#F5EBE0;">
+  <h4>Booking date: </h4>
+    <h3><%= "#{@booking.start_date.strftime('%d %b')} - #{@booking.end_date.strftime('%d %b')}" %></h3>
   <div class="d-flex ">
     <div class="card-booking-success d-flex align-items-center">
     <div class=""> <%= image_tag("img_2.jpg", height: '280', width: '280') %></div>
@@ -46,8 +47,10 @@
       </div>
     </div>
     </div>
-    <div><center><%= link_to user_path %>
-    <button class="button button1" >My bookings</button></center>
+    <div class="w-100 d-flex justify-content-center">
+      <%= link_to user_path(current_user) do %>
+        <button class="button button1" >My bookings</button>
+      <% end %>
     </div>
   </div>
   </div>
