@@ -19,16 +19,27 @@
 .card-img {
   padding: 12px;
   border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  width: 320px;
+}
+
+.detail-img {
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .card .card-infos {
   padding: 16px;
-  background: #EFE5D9;
+  background: #efe5d9;
   justify-content: space-between;
   position: relative;
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
 
+  border-radius: 8px;
 }

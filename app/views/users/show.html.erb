@@ -3,7 +3,7 @@
     <hr>
       <div class="container-fluid">
         <a class="navbar-brand" href="/">WATCH THIS</a>
-        <%= link_to 'Back to Watches', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
+        <%= link_to 'Back to Home', watches_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
         <%= link_to 'Add New Watch', new_watch_path, class: "btn btn-outline-secondary my-2 my-sm-0 ms-2" %>
         <div class="collapse navbar-collapse">
           <div class="ms-auto flex">
@@ -50,7 +50,7 @@
 
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="row">
-              <%= render Booking.with_status('available', @user) %>
+              <%= render 'watch_user', watches: Watch.status_available(current_user) %>
             </div>
           </div>
 

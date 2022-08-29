@@ -1,3 +1,15 @@
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+</head>
+
+
+<h5 style="margin:10px 10px 5px 20px;">Rent beautiful watches</h5>
+<div class="btn btn-success btn-xs" id="index-button">
+  <%= link_to "Rent out your", new_watch_path, :class => "btn" %>
+</div>
+<hr>
 
   <div class=" banner d-flex justify-content-start align-items-center">
     <div class="box justify-content-start ">
@@ -6,22 +18,36 @@
     </div>
   </div>
 
-
-<div class="container">
-  <div>
-  <h1>Watches</h1>
-  <%= link_to "Rent out your watch", new_watch_path, class: "btn btn-outline-secondary mx-4" %>
-    <form action="/watches">
-      <label for="start_date">Start date:</label><br>
-      <input type="date" id="start_date" name="start_date"><br>
-      <label for="end_date">End date:</label><br>
-      <input type="date" id="end_date" name="end_date" ><br><br>
-      <input type="submit" value="Submit">
+<div class="container" data-controller="watch-tabs">
+  <div class= "d-flex justify-content-center">
+    <form action="/watches" class="form-inline">
+    <label for="start_date">Rent watch from:</label><br>
+    <input type="date" id="start_date" name="start_date"><br>
+    <label for="end_date">Until:</label><br>
+    <input type="date" id="end_date" name="end_date" ><br><br>
+    <input type="submit" value="Let's go!" id="submitbutton">
     </form>
-    <div class="row">
-      <% @watches.each do |watch| %>
-        <%= render watch, watch: watch %>
-      <% end %>
-    </div>
   </div>
+
+  <% if @start_date != "" %>
+    <h5 class="align-item-center"><%= "Watches that are available from #{@start_date} to #{@end_date} " %></h5>
+    <% end %>
+
+  <div class="text-center">
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="all">All</button>
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Patek Philippe">Patek Philippe</button>
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Lange & Söhne">Lange & Söhne</button>
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Audemars Piguet">Audemars Piguet</button>
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Rolex">Rolex</button>
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Richard Mille">Richard Mille</button>
+      <button data-action="click->watch-tabs#showWatches" class="btn btn-default filter-button" data-filter="Cartier">Cartier</button>
+  </div>
+
+  <div class="d-flex gap-3 justify-content-center flex-wrap">
+    <% @watches.each do |watch| %>
+      <%= render watch, watch: watch %>
+    <% end %>
+
+  </div>
+
 </div>
