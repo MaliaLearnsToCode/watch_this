@@ -8,6 +8,7 @@
 require "open-uri"
 require "nokogiri"
 
+
 puts "Cleaning database"
 Watch.destroy_all
 Booking.destroy_all
@@ -27,19 +28,27 @@ user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name
 user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low', points: 1700, address: "88 Namly Avenue, Singapore")
 
 puts 'Creating Watches ...'
-watch1 = Watch.create!(
-  brand: 'Patek Philippe',
-  model: 'Nautilus',
-  year: 2022,
-  price: 799.99,
-  user: user1,
-  avg_rating: 4.5,
-  cleaning_price: 150,
-  delivery_price: 60,
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661752536/sozq9lxelbl22hcs8kra.jpg")
+watch1 = Watch.new(start_date: Date.new(2022, 6, 20),
+end_date: Date.new(2022, 9, 25),
+availability: true,
+brand: 'Patek Philippe',
+model: 'Nautilus',
+year: 2022,
+price: 799.99,
+user: user1,
+avg_rating: 4.5,
+cleaning_price: 150,
+delivery_price: 60,)
+watch1.photos.attach(io: file, filename: "nautilus.jpg", content_type: "image/jpg")
+watch1.save
 
-)
 
-watch2 = Watch.create!(
+file = URI.open("")
+watch2 = Watch.new(
+
+
+  availability: true,
   brand: 'Lange & Söhne',
   model: 'Lange 1',
   year: 1986,
@@ -48,22 +57,32 @@ watch2 = Watch.create!(
   avg_rating: 4.6,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch2.photos.attach(io: file, filename: "lange1.jpg", content_type: "image/jpg")
+watch2.save
 
-watch3 = Watch.create!(
+
+file = URI.open("")
+watch3 = Watch.new(
+
+
   brand: 'Audemars Piguet',
-  model: 'Code 1165',
+  model: 'Code 1159',
   year: 2019,
   price: 290.00,
   user: user3,
   avg_rating: 3.2,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch3.photos.attach(io: file, filename: "code1159.jpg", content_type: "image/jpg")
+watch3.save
 
-watch4 = Watch.create!(
+
+file = URI.open("")
+watch4 = Watch.new(
+
+
   brand: 'Rolex',
   model: 'Daytona',
   year: 1972,
@@ -72,10 +91,15 @@ watch4 = Watch.create!(
   avg_rating: 4.9,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch4.photos.attach(io: file, filename: "daytona.jpg", content_type: "image/jpg")
+watch4.save
 
-watch5 = Watch.create!(
+
+file = URI.open("")
+watch5 = Watch.new(
+
+
   brand: 'Audemars Piguet',
   model: 'Royal Oak Openwork',
   year: 2009,
@@ -83,10 +107,15 @@ watch5 = Watch.create!(
   user: user4,
   avg_rating: 4.2,
   cleaning_price: 150,
-
 )
+watch5.photos.attach(io: file, filename: "openwork.jpg", content_type: "image/jpg")
+watch5.save
 
-watch6 = Watch.create!(
+
+file = URI.open("")
+watch6 = Watch.new(
+
+
   brand: 'Patek Philippe',
   model: 'Aquanaut',
   year: 2003,
@@ -95,22 +124,32 @@ watch6 = Watch.create!(
   avg_rating: 4.1,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch6.photos.attach(io: file, filename: "aquanaut.jpg", content_type: "image/jpg")
+watch6.save
 
-watch7 = Watch.create!(
+
+file = URI.open("")
+watch7 = Watch.new(
+
+
   brand: 'Richard Mille',
-  model: 'RM1',
+  model: 'RM11',
   year: 2000,
   price: 1200.00,
   user: user1,
   avg_rating: 4.3,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch7.photos.attach(io: file, filename: "rm11.jpg", content_type: "image/jpg")
+watch7.save
 
-watch8 = Watch.create!(
+
+file = URI.open("")
+watch8 = Watch.new(
+
+
   brand: 'Cartier',
   model: 'Crash',
   year: 1967,
@@ -119,10 +158,15 @@ watch8 = Watch.create!(
   avg_rating: 4.6,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch8.photos.attach(io: file, filename: "crash.jpg", content_type: "image/jpg")
+watch8.save
 
+
+file = URI.open("")
 watch9 = Watch.create!(
+
+
   brand: 'Audemars Piguet',
   model: 'Royal Oak Offshore',
   year: 2010,
@@ -131,8 +175,9 @@ watch9 = Watch.create!(
   avg_rating: 4.6,
   cleaning_price: 150,
   delivery_price: 60,
-
 )
+watch9.photos.attach(io: file, filename: "offshore.jpg", content_type: "image/jpg")
+watch9.save
 
 puts 'Creating Bookings ...'
 booking1 = Booking.create(start_date: Date.new(2022, 7, 20), end_date: Date.new(2022, 7, 25), total: 1500, watch: watch1, renter: user5, status: 'confirmed', cleaning_service: false, delivery: true, completed: true)

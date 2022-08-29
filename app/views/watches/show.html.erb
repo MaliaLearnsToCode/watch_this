@@ -23,7 +23,7 @@
     <div id="single-watch-photo" class="row">
       <% @watch.photos.each do |photo| %>
       <div class = 'd-flex col-4 justify-content-center'>
-        <%= cl_image_tag photo.key, height: 280, width: 280 %>
+        <%= cl_image_tag @watch.photo.key, height: 280, width: 280 %>
       </div>
       <% end %>
       </div>
