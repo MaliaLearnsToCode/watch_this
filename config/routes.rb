@@ -1,32 +1,25 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  # Defines the root path route ("/")
-
-
   root to: 'watches#index'
 
   resources :users do
-    resources :watches, only: %i[new create show destroy edit update]
+    resources :watches, only: %i[edit update]
   end
 
 
-  resources :watches do
-    resources :bookings, only: %i[new create show]
+  resources :watches, only: %i[destroy index create new show] do
+    resources :bookings, only: %i[new create]
   end
 
-
-  resources :bookings, except: %i[new create]
-  # resources :bookings, only: %i[edit update]
-
-  resources :bookings do
+  resources :bookings, except: %i[new create] do
     member do
       get :success
     end
+    # resources :review, only: %i[new create]
   end
 
-  resources :bookings, only: %i[destroy]
-
-
-  # resources :users
+  # resources :user do
+  #   resources :review, only: %i[show]
+  # end
 end

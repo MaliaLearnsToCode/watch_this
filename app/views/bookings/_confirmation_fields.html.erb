@@ -1,110 +1,210 @@
 <div>
-  <div><!-- Div A -->
-    <div class="card-img d-flex justify-content-center" style="display-align:center"><%= image_tag "Progress_Bar.png", class: "center", alt: "Watch", width: 400 %></div>
-  <div><!-- Div B -->
-    <div class="container d-flex"><!-- main div -->
-      <div class="flex-grow-1"> <!--left div-->
-        <div class="d-flex">
-          <div class="d-flex gap-2 pb-2"><!-- Div B1a -->
-            <div class=""><%= image_tag "urban1.jpg.webp", alt: "Watch", width: 200 %></div>
-            <div class=""><%= image_tag "urban2.jpg.webp", alt: "Watch", width: 200 %></div>
+
+  <div class="container pb-5">
+
+    <div class="flex-grow-1"> <!--left div-->
+      <div class="card-img d-flex justify-content-center" style="display-align:center"><%= image_tag "Progress_Bar.png", class: "center", alt: "Watch", width: 400 %></div>
+
+      <div class="d-flex justify-content-between">
+
+        <div class="d-flex gap-2 pb-2"><!-- Div B1a -->
+          <div class=""><%= image_tag "urban1.jpg.webp", alt: "Watch", width: 200 %></div>
+          <div class=""><%= image_tag "urban2.jpg.webp", alt: "Watch", width: 200 %></div>
+        </div>
+
+        <div class="d-flex flex-column justify-content-around text-black"> <!--right div-->
+          <div class="d-flex align-items-end" id="F5EBE0_colour"><!--Profile div-->
+            <p class="pe-3"><%= current_user.first_name %> <%= current_user.last_name %></p>
+            <div><img src ="https://cdn-icons-png.flaticon.com/512/7622/7622626.png" width="50" height="50"></div>
           </div>
         </div>
-        <div class="d-flex justify-content-between form-check form-check-inline background-color=F5EBE0 me-4 px-4 py-2 rounded" id="F5EBE0_colour"><!-- Div B1b -->
-          <div class="text-black">
-            <p><%= watch.brand %></p>
-            <p><%= watch.model %></p>
+
+      </div>
+
+      <div class="d-flex justify-content-between form-check form-check-inline me-4 px-4 py-2 rounded options-colour bg-light bg-gradient"><!-- Div B1b -->
+        <div class="text-black">
+          <p style="text bold;">Reserved watch</p>
+          <p>Brand: <%= watch.brand %></p>
+          <p>Model: <%= watch.model %></p>
+        </div>
+        <div>
+          <h6><%= "Booking dates: #{@start_date} - #{@end_date}" %></h6>
+          <h6><%= "Price per day: $ #{@watch.price}" %></h6>
+          <hr>
+          <h5><% subtotal = @watch.price * @days.to_i %><%= "Subtotal: $ #{subtotal}" %></h5>
+        </div>
+        <div class="card-summary">
+          <div class="px-4 px-2" id="F5EBE0_colour">
+            <h4 style="text-align:center">Reward Points</h4>
+            <p style="text-align:center">Your Points <strong><%= current_user.points %></strong></p>
+            <p style="text-align:center">New Points <strong>200</strong></p>
           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div>
+    <!-- Javascript get the elements cleaning price and set conditions when to increment and when not to-->
+    <script>
+      function totalIt() {
+        var input = document.getElementsByName("product");
+        var optional_total = 0;
+        for (var i = 0; i < input.length; i++) {
+          if (input[i].checked) {
+            optional_total += parseFloat(input[i].value);
+          }
+        }
+        var subtotal = <%= subtotal %>
+        var final_total = optional_total + parseFloat(subtotal)
+
+        document.getElementsByName("total")[0].value = final_total.toFixed(2) ;
+        document.getElementsByName("booking[total]")[0].value = final_total.toFixed(2) ;
+
+
+        if (input[0].checked) {
+          document.getElementsByName("booking[cleaning_service]")[0].value = true ;
+        }
+        else {
+          document.getElementsByName("booking[cleaning_service]")[0].value = false ;
+        }
+
+        if (input[1].checked) {
+          document.getElementsByName("booking[delivery]")[0].value = true ;
+        }
+        else {
+          document.getElementsByName("booking[delivery]")[0].value = false ;
+        }
+      }
+    </script>
+    <hr>
+
+    <!-- Displaying the FINAL Total after checking options -->
+    <div class="container pb-5">
+      <h4> <strong>Select the services you would like to add:</strong></h4>
+      <br>
+      <div class="d-flex justify-content-between text-black  px-4 py-2 my-2 rounded me-4 bg-light bg-gradient">
+        <input name="product" value="150.0" type="checkbox" onclick="totalIt()" />
+        <p>Cleaning Service</p>
+        <p class="text-right">$<%= watch.cleaning_price %></p>
+      </div>
+      <br>
+      <div class="d-flex justify-content-between text-black  px-4 py-2 my-2 rounded me-4 bg-light bg-gradient">
+        <input name="product" value="60.0" type="checkbox" onclick="totalIt()" />
+        <p>Delivery</p>
+        <p>$<%= watch.delivery_price %></p>
+      </div>
+      <br>
+      <div class="d-flex justify-content-between text-black  px-4 py-2 my-2 rounded me-4 bg-light bg-gradient">
+        <h4>TOTAL : </h4>
+        <input value="<%=subtotal%>" readonly="readonly" type="text" name="total" />
+      </div>
+    </div>
+    <br>
+
+    <!-- Rendering from PARTIAL "mapbox_pin.html.erb" where -->
+    <%# <div class="map-render">
+      <%= render "mapbox_pin" %>
+   <!--  </div> %> -->
+    <%= simple_form_for [@watch, @booking ] do |f| %>
+      <%= f.input :delivery_location,
+      input_html: {data: {delivery_location_autocomplete_target: "delivery_location"}},
+      wrapper_html: {data: {controller: "delivery_location-autocomplete", delivery_location_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}}
+      %>
+
+
+    <!-- <div id='geocoder' class='geocoder'></div> -->
+
+    <div class='d-flex justify-content-center '>
+      <div class='' style="width: 80%; height: 600px;"
+        data-controller="map"
+        data-map-markers-value="<%= @markers.to_json %>"
+        data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+    </div>
+
+    <!-- Simple_form_for with "f.hidden_field" to pass the data onto the next page but without displaying them in a form -->
+      <%= f.hidden_field :start_date, value: @start_date %>
+      <%= f.hidden_field :end_date, value: @end_date %>
+      <%= f.hidden_field :total, value: subtotal %>
+      <%= f.hidden_field :status, value: 'pending' %>
+      <%= f.hidden_field :cleaning_service, value: false %>
+      <%= f.hidden_field :delivery, value: false %>
+      <%= f.hidden_field :delivery_location_1, value: @booking.delivery_location %>
+
+    <!-- Credit card information -->
+    <div class="input-cc">
+      <hr>
+      <div class="container pb-5"><!-- Div C -->
+          <h4><strong>Please provide your credit card information to proceed with payment</strong></h4>
+          <div class="flex-column"><!-- Div C1 -->
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" placeholder="Your name" required>
+            <div class="invalid-feedback">Name can't be blank</div>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="form-text"></div>
+          </div>
+
+          <div class="mb-3 width: 50%"><!-- Div C2 -->
+            <label class="form-label">Expiry Date</label>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <select id="Year" class="form-select me-1" required>
+                <option></option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2022">2024</option>
+                <option value="2023">2025</option>
+                <option value="2022">2026</option>
+                <option value="2023">2027</option>
+                <option value="2022">2028</option>
+                <option value="2023">2029</option>
+              </select>
+
+              <select id="Month" class="form-select mx-1" required>
+                <option></option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+          </div>
+
           <div>
-            <p><%= watch.start_date.strftime('%d %b')%> to <%= watch.end_date.strftime('%d %b')%></p>
-            <h4>$<%= watch.price %></h4>
-          </div>
-        </div>
-
-        <%= simple_form_for [watch, booking] do |f| %>
-        <div id="">
-          <div class="d-flex justify-content-between text-black  px-4 py-2 my-2 rounded me-4" id="F5EBE0_colour">
-            <%= f.input :cleaning_service %>
-            <p class="text-right">$<%= watch.cleaning_price %></p>
-          </div>
-          <div class="d-flex justify-content-between text-black px-4 py-2 rounded me-4" id="F5EBE0_colour">
-            <%= f.input :delivery %>
-            <p>$<%= watch.delivery_price %></p>
+            <label for="exampleInputName" class="form-label">CVV</label>
+            <input type="integer" class="form-control" id="exampleInputNumber" placeholder="Number" required>
+            <div class="invalid-feedback">Number can't be blank</div>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="form-text"></div>
           </div>
 
+          <div>
+            <label for="exampleInputName" class="form-label">Number</label>
+            <input type="integer" class="form-control" id="exampleInputNumber" placeholder="Number" required>
+            <div class="invalid-feedback">Number can't be blank</div>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="form-text"></div>
+          </div>
+
         </div>
-      </div>
-      <div class="d-flex flex-column justify-content-around text-black"> <!--right div-->
-        <div class="d-flex align-items-end" id="F5EBE0_colour"><!--Profile div-->
-          <p class="pe-3"><%= user.first_name %> <%= user.last_name %></p>
-          <div><img src ="https://cdn-icons-png.flaticon.com/512/7622/7622626.png" width="50" height="50"></div>
-        </div>
-        <div class="px-4 px-2" id="F5EBE0_colour"><!--Reward Points div-->
-          <h4 style="text-align:center">Reward Points</h4>
-          <p style="text-align:center">Your Points <strong><%= user.points %></strong></p>
-          <p style="text-align:center">New Points <strong>200</strong></p>
-        </div>
-        <div class="text-center" id="F5EBE0_colour"><!--Total price div-->
-          <h3>Total</h3>
-          <h3>$48,210</h2>
-        </div>
-      </div>
+    </div>
+
+    <!-- sending the submissions onto the success page with simple_form_for -->
+    <div class="container pb-5">
+      <%= f.submit "Submit", class: "btn btn-success btn-opacity-25" %>
+      <% end %>
     </div>
 
 
   </div>
-  <div class="container"><!-- Div C -->
-    <div class="flex-column"><!-- Div C1 -->
-      <label for="exampleInputName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="exampleInputName" placeholder="Your name" required>
-      <div class="invalid-feedback">Name can't be blank</div>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="form-text"></div>
-    <div class="mb-3 width: 50%"><!-- Div C2 -->
-    <label class="form-label">Expiry Date</label>
-    <div class="d-flex flex-row justify-content-between align-items-center">
-      <select id="Year" class="form-select me-1" required>
-        <option></option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-        <option value="2022">2024</option>
-        <option value="2023">2025</option>
-        <option value="2022">2026</option>
-        <option value="2023">2027</option>
-        <option value="2022">2028</option>
-        <option value="2023">2029</option>
-      </select>
-
-      <select id="Month" class="form-select mx-1" required>
-        <option></option>
-        <option value="1">January</option>
-        <option value="2">February</option>
-        <option value="3">March</option>
-        <option value="4">April</option>
-        <option value="5">May</option>
-        <option value="6">June</option>
-        <option value="7">July</option>
-        <option value="8">August</option>
-        <option value="9">September</option>
-        <option value="10">October</option>
-        <option value="11">November</option>
-        <option value="12">December</option>
-      </select>
-      <label for="exampleInputName" class="form-label">CVV</label>
-      <input type="integer" class="form-control" id="exampleInputNumber" placeholder="Number" required>
-      <div class="invalid-feedback">Number can't be blank</div>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="form-text"></div>
-    </div>
-
-      <label for="exampleInputName" class="form-label">Number</label>
-      <input type="integer" class="form-control" id="exampleInputNumber" placeholder="Number" required>
-      <div class="invalid-feedback">Number can't be blank</div>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="form-text"></div>
-
-      <div class="center" style="align-items: center"><%= f.submit "Confirm!", class:"text-center btn btn-primary" %></div>
-    </div>
-  </div>
-  <% end %>
 </div>

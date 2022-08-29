@@ -1,26 +1,23 @@
 .card {
-    overflow: hidden;
-    margin-bottom: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  width: 320px;
 }
 
-.card img {
-    // height: 300px;
-    // width: 200px;
-    // object-fit: contain;
-    // background-color: white;
-}
+.detail-img {
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
 
-.card-img {
-  padding: 12px;
-
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .card .card-infos {
   padding: 16px;
-  background: #EFE5D9;
+  background: #efe5d9;
   justify-content: space-between;
   position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_26_032213) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_26_163136) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -48,7 +48,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_26_032213) do
     t.decimal "total"
     t.bigint "watch_id", null: false
     t.bigint "user_id", null: false
-    t.string "status", default: "pending"
+    t.string "status", default: "nil"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "cleaning_service", default: false
@@ -102,6 +102,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_26_032213) do
     t.integer "delivery_price"
     t.date "start_date"
     t.date "end_date"
+    t.boolean "availability", default: true
     t.index ["user_id"], name: "index_watches_on_user_id"
   end
 
