@@ -1,4 +1,24 @@
 .card {
+    overflow: hidden;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.34);
+    box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.34);
+}
+
+.card img {
+
+    object-fit: contain;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width:100%;
+    border-radius: 8px;
+}
+
+.card-img {
+  padding: 12px;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 1rem;
   width: 320px;
@@ -20,4 +40,6 @@
   background: #efe5d9;
   justify-content: space-between;
   position: relative;
+
+  border-radius: 8px;
 }

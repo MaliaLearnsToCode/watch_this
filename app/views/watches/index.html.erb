@@ -11,6 +11,13 @@
 </div>
 <hr>
 
+  <div class=" banner d-flex justify-content-start align-items-center">
+    <div class="box justify-content-start ">
+      <h1>Luxury time pieces for all.
+      <h5>An exclusive society for opulent time pieces </h5></h1>
+    </div>
+  </div>
+
 <div class="container" data-controller="watch-tabs">
   <div class= "d-flex justify-content-center">
     <form action="/watches" class="form-inline">
@@ -40,6 +47,7 @@
     <% @watches.each do |watch| %>
       <%= render watch, watch: watch %>
     <% end %>
+
   </div>
 
 </div>
