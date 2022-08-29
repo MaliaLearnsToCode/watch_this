@@ -10,6 +10,14 @@ export default class extends Controller {
   };
 
   connect() {
+    console.log("Connected to mapbox");
+
+    let deliveryInput = document.getElementsByName(
+      "booking[delivery_location]"
+    )[0];
+
+    let geocoderInput = document.getElementById("geocoder");
+
     mapboxgl.accessToken = this.apiKeyValue;
 
     this.map = new mapboxgl.Map({
@@ -23,8 +31,19 @@ export default class extends Controller {
       new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
+      }).on("result", ({ result }) => {
+        console.log(result);
+        deliveryInput.value = result.place_name;
+        console.log(deliveryInput.value);
       })
     );
+
+    const geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl,
+    });
+
+    geocoderInput.appendChild(geocoder.onAdd(this.map));
   }
 
   #addMarkersToMap() {

@@ -106,20 +106,33 @@
     <br>
 
     <!-- Rendering from PARTIAL "mapbox_pin.html.erb" where -->
-    <div class="map-render">
+    <%# <div class="map-render">
       <%= render "mapbox_pin" %>
+   <!--  </div> %> -->
+    <%= simple_form_for [@watch, @booking ] do |f| %>
+      <%= f.input :delivery_location,
+      input_html: {data: {delivery_location_autocomplete_target: "delivery_location"}},
+      wrapper_html: {data: {controller: "delivery_location-autocomplete", delivery_location_autocomplete_api_key_value: ENV["MAPBOX_API_KEY"]}}
+      %>
+
+
+    <!-- <div id='geocoder' class='geocoder'></div> -->
+
+    <div class='d-flex justify-content-center '>
+      <div class='' style="width: 80%; height: 600px;"
+        data-controller="map"
+        data-map-markers-value="<%= @markers.to_json %>"
+        data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>"></div>
     </div>
 
-
     <!-- Simple_form_for with "f.hidden_field" to pass the data onto the next page but without displaying them in a form -->
-    <%= simple_form_for [@watch, @booking ] do |f| %>
       <%= f.hidden_field :start_date, value: @start_date %>
       <%= f.hidden_field :end_date, value: @end_date %>
       <%= f.hidden_field :total, value: subtotal %>
       <%= f.hidden_field :status, value: 'pending' %>
       <%= f.hidden_field :cleaning_service, value: false %>
       <%= f.hidden_field :delivery, value: false %>
-    <%= f.hidden_field :delivery_location, value: "" %>
+      <%= f.hidden_field :delivery_location_1, value: @booking.delivery_location %>
 
     <!-- Credit card information -->
     <div class="input-cc">

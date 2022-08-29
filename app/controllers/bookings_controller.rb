@@ -22,15 +22,18 @@ class BookingsController < ApplicationController
     # }
 
     @users = User.all
-    @markers = @users.geocoded.map do |user|
+    markers_arr = @users.geocoded.map do |user|
       {
         lat: user.latitude,
         lng: user.longitude
       }
     end
+    @markers = []
+    @markers << markers_arr.first
   end
 
   def create
+
     @booking = Booking.new(booking_params)
     @booking.renter = current_user
     @booking.watch = @watch

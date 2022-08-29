@@ -27,20 +27,34 @@ user9 = User.create!(email: 'hugo@lewagon.com', password: '12345678', first_name
 user10 = User.create!(email: 'yongcheng@lewagon.com', password: '12345678', first_name: 'Yong Cheng', last_name: 'Low', points: 1700, address: "88 Namly Avenue, Singapore")
 
 puts 'Creating Watches ...'
-watch1 = Watch.create!(
-  start_date: Date.new(2022, 6, 20),
-  end_date: Date.new(2022, 9, 25),
-  availability: true,
-  brand: 'Patek Philippe',
-  model: 'Nautilus',
-  year: 2022,
-  price: 799.99,
-  user: user1,
-  avg_rating: 4.5,
-  cleaning_price: 150,
-  delivery_price: 60,
+# watch1 = Watch.create!(
+#   start_date: Date.new(2022, 6, 20),
+#   end_date: Date.new(2022, 9, 25),
+#   availability: true,
+#   brand: 'Patek Philippe',
+#   model: 'Nautilus',
+#   year: 2022,
+#   price: 799.99,
+#   user: user1,
+#   avg_rating: 4.5,
+#   cleaning_price: 150,
+#   delivery_price: 60,
 
-)
+# )
+file = URI.open("https://res.cloudinary.com/dyiaygjfa/image/upload/v1661752536/sozq9lxelbl22hcs8kra.jpg")
+watch1 = Watch.new(start_date: Date.new(2022, 6, 20),
+end_date: Date.new(2022, 9, 25),
+availability: true,
+brand: 'Patek Philippe',
+model: 'Nautilus',
+year: 2022,
+price: 799.99,
+user: user1,
+avg_rating: 4.5,
+cleaning_price: 150,
+delivery_price: 60,)
+watch1.photos.attach(io: file, filename: "nautilus.jpg", content_type: "image/jpg")
+watch1.save
 
 watch2 = Watch.create!(
   start_date: Date.new(2022, 7, 10),
